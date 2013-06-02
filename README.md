@@ -1,6 +1,7 @@
 JSimil
 ======
 
+JSimil 1.0.4_(9) 2007-2009 (http://www.jsimil.com)
 Bytecode-level similarity detector for Java-written programs
 
 JSimil Quick Guide:
@@ -46,13 +47,13 @@ Section 6: Utilization.
   Profile manager is a graphic user interface application that allows the editing of processing profiles. It has integrated contextual help about any profile attributes.
 	It can be manually launched:
   
-    $ java -jar JSimilProfile.jar
+    $ java -jar JSimilProfileEditor.jar
   
   Or it can be launched using given linux, mac or windows scripts:
   
-    $ ./perfiles.sh
+    $ ./profiles.sh
   
-    \> perfiles.bat
+    \> profiles.bat
   
   6.2. Command-Line Interface Application.
   
@@ -61,9 +62,9 @@ Section 6: Utilization.
   A complete supported arguments description will be shown if the tool is executed without arguments or with -h argument:
 
     JSimil 1.0.4_(9) 2007-2009 (http://www.jsimil.com).
-    Java-Written Programs Similarities Detector.
+    Bytecode-level similarity detector for Java-written programs.
     
-    Author: Luis Quesada Torres (www.elezeta.com).
+    Author: Luis Quesada.
     
     JSimilCLI - JSimil Command Line Interface.
     
@@ -159,35 +160,34 @@ Section 6: Utilization.
   
   Finally, you may autoconfigure if applicable (-a), load battery from file (-b PATH), ask profile information in output (-i), sort results by size and similarity (-y), export as HTML (-e PATH), overwrite output files (-f), show standard output summary (-r), and show only the twenty most relevant results (-u NUM), update memory limit (-Xms y -Xmx) and specify profile to use (-p PATH):
   
-    $ java -Xms128M -Xmx1618M -jar JSimilCLI.jar -a -b BAT -p PER -i -y -e RE -f -r -u 20
+    $ java -Xms128M -Xmx1618M -jar JSimilCLI.jar -a -b BAT -p PRO -i -y -e RE -f -r -u 20
     
   6.2.5. Processing and diff output.
   
   Instead of processing to obtain HTML results, you can processing to obtain diff format results. You may autoconfigure if applicable (-a), load battery from file (-b PATH), ask profile information in output (-i), sort results by size and similarity (-y), export as diff (-k PATH), overwrite output files (-f), show standard output summary (-r), and show only the twenty most relevant results (-u NUM), update memory limit (-Xms y -Xmx), specify profile to use (-p PATH), and specify similarity threshold for considering as difference (--diff-simil THRESHOLD):
   
-    $ java -Xms128M -Xmx1618M -jar JSimilCLI.jar -a -b BAT -p PER -u 20 \
-                                       --diff-simil 100 -k RE -f -i -y -r
+    $ java -Xms128M -Xmx1618M -jar JSimilCLI.jar -a -b BAT -p PRO -u 20 --diff-simil 100 -k RE -f -i -y -r
 
   6.2.6. Load and processing scripts.
 
   Linux, mac and windows scripts are included. These scripts use the configuration contained in “default.jcf” (that by defaults autoconfigures) and automatize all this tasks:
   
-	Load battery (replace .xx with .sh or .bat, according to the operating system):
+  Load battery (replace .xx with .sh or .bat, according to the operating system):
   
-    $ ./cargar.sh SOURCE_DIR TARGET_BATTERY_FILE
-    > cargar.bat SOURCE_DIR TARGET_BATTERY_FILE
+    $ ./load.sh SOURCE_DIR TARGET_BATTERY_FILE
+    > load.bat SOURCE_DIR TARGET_BATTERY_FILE
            
   Process and obtain HTML:
   
-    $ ./procesar.sh BATTERY PROFILE NUM_RESULTS_TO_SHOW OUTPUT_DIR
-	  > procesar.bat BATTERY PROFILE NUM_RESULTS_TO_SHOW OUTPUT_DIR
+	$ ./process.sh BATTERY PROFILE NUM_RESULTS_TO_SHOW OUTPUT_DIR
+	> process.bat BATTERY PROFILE NUM_RESULTS_TO_SHOW OUTPUT_DIR
     
   Process and obtain diff:
   
     $ ./diffs.sh BATTERY PROFILE NUM_RESULTS_TO_SHOW OUTPUT_DIR DIFF_THOLD
     > diffs.bat BATTERY PROFILE NUM_RESULTS_TO_SHOW OUTPUT_DIR DIFF_THOLD
-    
-	Process and obtain diff between two given files:
+
+  Process and obtain diff between two given files:
   
     $ ./diff.sh PATH_1 PATH_2 PROFILE DIFF_THOLD TEMP_DIR
     > diff.bat PATH_1 PATH_2 PROFILE DIFF_THOLD TEMP_DIR
@@ -208,7 +208,7 @@ Section 6: Utilization.
 
   Write command as follows:
   
-  /PATH/TO/netbeansdiff.sh -- {0} {1} perfiles/diff.jpf 100 /tmp/jsimil
+	  /PATH/TO/netbeansdiff.sh -- {0} {1} profiles/diff.jpf 100 /tmp/jsimil
 
   Note that parameters are the same as diff.sh script. The 100 value is the similarity threshold and can be changed.
 
