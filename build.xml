@@ -24,6 +24,8 @@
     </target>
     <target name="clean">
         <delete dir="bin"/>
+        <delete file="JSimilCLI.jar"/>
+        <delete file="JSimilProfileEditor.jar"/>
     </target>
     <target depends="clean" name="cleanall"/>
     <target depends="build-subprojects,build-project,create-cli-jar,create-profile-jar" name="build"/>
