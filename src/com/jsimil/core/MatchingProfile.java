@@ -17,7 +17,7 @@ import java.util.Collections;
 import java.util.HashMap;
 
 /**
- * Perfil de comparaciÃ³n, contiene atributos que definen la comparaciÃ³n.
+ * Perfil de comparación, contiene atributos que definen la comparación.
  * @author elezeta
  */
 final public class MatchingProfile implements Serializable {
@@ -28,7 +28,7 @@ final public class MatchingProfile implements Serializable {
     private static final long serialVersionUID = JSimil.serialVersionUID;
     
     /**
-     * Valores de configuraciÃ³n del perfil.
+     * Valores de configuración del perfil.
      */
     HashMap<String,Double> valores;
 
@@ -44,7 +44,7 @@ final public class MatchingProfile implements Serializable {
     
     /**
      * Constructor del perfil.
-     * Inicializa los valores de configuraciÃ³n a los vÃ¡lidos.
+     * Inicializa los valores de configuración a los válidos.
      * @.post Perfil inicializado.
      */
     public MatchingProfile() {
@@ -136,7 +136,7 @@ final public class MatchingProfile implements Serializable {
     }
     
     /**
-     * Devuelve el valor de un atributo de configuraciÃ³n (sin excepciÃ³n).
+     * Devuelve el valor de un atributo de configuración (sin excepción).
      * @param key Clave del atributo a devolver.
      * @return Valor del atributo.
      */    
@@ -203,7 +203,7 @@ final public class MatchingProfile implements Serializable {
    }   
     
     /**
-     * Devuelve el valor de un atributo de configuraciÃ³n.
+     * Devuelve el valor de un atributo de configuración.
      * @param key Clave del atributo a devolver.
      * @return Valor del atributo.
      * @exception JSimilException El atributo indicado no existe.
@@ -216,8 +216,8 @@ final public class MatchingProfile implements Serializable {
     }
     
     /**
-     * Cambia el valor de un parÃ¡metro del perfil.
-     * El atributo ya debÃ­a existir y debe ser reemplazado.
+     * Cambia el valor de un parámetro del perfil.
+     * El atributo ya debía existir y debe ser reemplazado.
      * @param key Clave del atributo a reemplazar.
      * @param val Nuevo valor para el atributo.
      * @.post El valor ha sido reemplazado.
@@ -231,14 +231,14 @@ final public class MatchingProfile implements Serializable {
     }
     
     /**
-     * Validar la baterÃ­a de programas.
-     * @exception JSimilException Alguno de los parÃ¡metros esperaba 0 o 1.
-     * @exception JSimilException Alguno de los parÃ¡metros esperaba entre 0 y 1.
-     * @exception JSimilException Alguno de los parÃ¡metros esperaba > 0.
-     * @exception JSimilException Alguno de los parÃ¡metros esperaba >= 0.
-     * @exception JSimilException Alguno de los parÃ¡metros esperaba < 0.
-     * @exception JSimilException Alguno de los parÃ¡metros esperaba <= 0.
-     * @exception JSimilException Alguno de los parÃ¡metros tiene un valor no valido.
+     * Validar la batería de programas.
+     * @exception JSimilException Alguno de los parámetros esperaba 0 o 1.
+     * @exception JSimilException Alguno de los parámetros esperaba entre 0 y 1.
+     * @exception JSimilException Alguno de los parámetros esperaba > 0.
+     * @exception JSimilException Alguno de los parámetros esperaba >= 0.
+     * @exception JSimilException Alguno de los parámetros esperaba < 0.
+     * @exception JSimilException Alguno de los parámetros esperaba <= 0.
+     * @exception JSimilException Alguno de los parámetros tiene un valor no valido.
      */
     public void validate() throws JSimilException {
         double a,b;
@@ -369,10 +369,10 @@ final public class MatchingProfile implements Serializable {
     }
     
     /**
-     * Cargar la configuraciÃ³n del perfil desde un fichero.
+     * Cargar la configuración del perfil desde un fichero.
      * @param ruta Ruta desde la que leer el perfil.
-     * @.post ConfiguraciÃ³n cargada desde un fichero.
-     * @exception JSimilException La ruta no es vÃ¡lida o accesible.
+     * @.post Configuración cargada desde un fichero.
+     * @exception JSimilException La ruta no es válida o accesible.
      * @exception JSimilException Formato incorrecto.
      */
     public void load(String ruta) throws JSimilException {
@@ -387,7 +387,7 @@ final public class MatchingProfile implements Serializable {
         catch (FileNotFoundException e) {
             fr = null;
             throw new JSimilException(ExceptionType.RUTA_NO_VALIDA_O_INACCESIBLE,
-                               "Ruta no vÃ¡lida o inaccesible.");    
+                               "Ruta no válida o inaccesible.");    
         }
         in = new BufferedReader(fr);
         
@@ -434,15 +434,15 @@ final public class MatchingProfile implements Serializable {
                 valores.put((String)campos[i],0.0);
             }
             throw new JSimilException(ExceptionType.RUTA_NO_VALIDA_O_INACCESIBLE,
-                                 "Ruta no vÃ¡lida o inaccesible.");
+                                 "Ruta no válida o inaccesible.");
         } 
     }
     
     /**
-     * Guardar la configuraciÃ³n del perfil a un fichero.
+     * Guardar la configuración del perfil a un fichero.
      * @param ruta Ruta a la que escribir el perfil.
-     * @.post ConfiguraciÃ³n escrita a un fichero.
-     * @exception JSimilException La ruta no es vÃ¡lida o accesible.
+     * @.post Configuración escrita a un fichero.
+     * @exception JSimilException La ruta no es válida o accesible.
      * @exception JSimilException Error escribiendo el fichero.
      */
     public void save(String ruta) throws JSimilException {
@@ -451,11 +451,11 @@ final public class MatchingProfile implements Serializable {
 
         if (ruta == null) {
             throw new JSimilException(ExceptionType.RUTA_NO_VALIDA_O_INACCESIBLE,
-                                 "Ruta no vÃ¡lida o inaccesible.");    
+                                 "Ruta no válida o inaccesible.");    
         }
         else if (ruta.equals("")) {
             throw new JSimilException(ExceptionType.RUTA_NO_VALIDA_O_INACCESIBLE,
-                                 "Ruta no vÃ¡lida o inaccesible.");                  
+                                 "Ruta no válida o inaccesible.");                  
         }
         
         try {
@@ -576,7 +576,7 @@ final public class MatchingProfile implements Serializable {
      * Lanza un evento.
      * @param tipo Tipo del evento lanzado.
      * @param mensaje Mensaje del evento lanzado.
-     * @.post Se ha lanzado el evento en cuestiÃ³n.
+     * @.post Se ha lanzado el evento en cuestión.
      */
     void event(EventType tipo,String mensaje) {
         if (listener != null)

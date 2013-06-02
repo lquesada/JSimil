@@ -11,7 +11,7 @@ import java.util.Comparator;
 
 
 /**
- * Cargador paralelizado de baterÃ­a.
+ * Cargador paralelizado de batería.
  * @author elezeta
  */
 final class ParallelProgramBatteryLoader {
@@ -101,12 +101,12 @@ final class ParallelProgramBatteryLoader {
     protected String ruta;
     
     /**
-     * BaterÃ­a de programas a cargar.
+     * Batería de programas a cargar.
      */
     protected ProgramBattery bateria;
     
     /**
-     * ConfiguraciÃ³n a utilizar.
+     * Configuración a utilizar.
      */
     protected Configuration config;
     
@@ -118,7 +118,7 @@ final class ParallelProgramBatteryLoader {
     /**
      * Obtener e incrementar cuenta.
      * @return Cuenta.
-     * @.post Cuenta incrementada con exclusiÃ³n mutua.
+     * @.post Cuenta incrementada con exclusión mutua.
      */
     synchronized int getCuenta() {
         return cuenta++;
@@ -128,8 +128,8 @@ final class ParallelProgramBatteryLoader {
      * Inicializar.
      * @param contenido Lista de programas a cargar.
      * @param ruta Ruta a cargar.
-     * @param bateria BaterÃ­a a cargar.
-     * @param config ConfiguraciÃ³n a utilizar.
+     * @param bateria Batería a cargar.
+     * @param config Configuración a utilizar.
      * @.post Objeto inicializado.
      */
     ParallelProgramBatteryLoader(String[] contenido,String ruta,ProgramBattery bateria,
@@ -143,7 +143,7 @@ final class ParallelProgramBatteryLoader {
 
     /**
      * Realizar la carga y obtener el listado de programas.
-     * @param nhebras NÃºmero de hebras a utilizar.
+     * @param nhebras Número de hebras a utilizar.
      * @return Programas cargados.
      */
     ArrayList<Program> getProgramas(int nhebras) {

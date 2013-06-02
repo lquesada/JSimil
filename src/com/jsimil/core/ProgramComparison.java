@@ -11,7 +11,7 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * ComparaciÃ³n de dos programas y sus elementos.
+ * Comparación de dos programas y sus elementos.
  * @author elezeta
  */
 final public class ProgramComparison implements Serializable {
@@ -42,12 +42,12 @@ final public class ProgramComparison implements Serializable {
     private String nombre2;
 
     /**
-     * TamaÃ±o del primer programa.
+     * Tamaño del primer programa.
      */
     private int tama1;
     
     /**
-     * TamaÃ±o del segundo programa.
+     * Tamaño del segundo programa.
      */
     private int tama2;
 
@@ -100,16 +100,16 @@ final public class ProgramComparison implements Serializable {
     }
     
     /**
-     * Cambia el tamaÃ±o del segundo programa de este resultado.
+     * Cambia el tamaño del segundo programa de este resultado.
      * @param val Nuevo valor.
-     * @.post TamaÃ±o del segundo programa cambiado.
+     * @.post Tamaño del segundo programa cambiado.
      */
     void setTama2(int val) {
         this.tama2 = val;
     }
     
     /**
-     * Cambia el tamaÃ±o del primer programa de este resultado.
+     * Cambia el tamaño del primer programa de este resultado.
      * @param val Nuevo valor.
      * @.post Nombre del primer programa cambiado.
      */
@@ -168,16 +168,16 @@ final public class ProgramComparison implements Serializable {
     }
 
     /**
-     * Devuelve el tamaÃ±o del primer programa.
-     * @return TamaÃ±o del primer programa.
+     * Devuelve el tamaño del primer programa.
+     * @return Tamaño del primer programa.
      */
     public int getTama1() {
         return tama1;
     }
     
     /**
-     * Devuelve el tamaÃ±o del segundo programa.
-     * @return TamaÃ±o del segundo programa.
+     * Devuelve el tamaño del segundo programa.
+     * @return Tamaño del segundo programa.
      */
     public int getTama2() {
         return tama2;

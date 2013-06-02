@@ -20,14 +20,14 @@ import java.util.jar.JarEntry;
 
 
 /**
- * Clase auxiliar de mÃ©todos estÃ¡ticos.
+ * Clase auxiliar de métodos estáticos.
  * @author elezeta
  */
 abstract class Tools {
         
     /**
      * Obtiene recursivamente las clases.
-     * @param direc DirecciÃ³n raiz.
+     * @param direc Dirección raiz.
      * @param ruta Ruta.
      * @.post Clases desensambladas.
      */
@@ -88,7 +88,7 @@ abstract class Tools {
      * @param in Fichero origen.
      * @param out Fichero destino.
      * @.post Fichero copiado.
-     * @exception IOException ExcepciÃ³n copiando fichero.     
+     * @exception IOException Excepción copiando fichero.     
      */
     static void copyFile(File in, File out) throws IOException {
         FileInputStream fis  = new FileInputStream(in);
@@ -110,11 +110,11 @@ abstract class Tools {
     }     
 
    /**
-    * Obtiene el nÃºmero de lineas en cÃ³digo original de un cÃ³digo desensamblado.
-    * @param d CÃ³digo desensamblado.
+    * Obtiene el número de lineas en código original de un código desensamblado.
+    * @param d Código desensamblado.
     * @param ini Linea inicial.
     * @param fin Linea final.
-    * @return Linea mÃ­nima y mÃ¡xima del cÃ³digo original.
+    * @return Linea mínima y máxima del código original.
     */
     static List<Integer> getLines(List<String> d,int ini,int fin) {
         int z;
@@ -158,9 +158,9 @@ abstract class Tools {
     }
     
    /**
-    * Obtiene el nombre de un mÃ©todo a partir del cÃ³digo.
+    * Obtiene el nombre de un método a partir del código.
     * @param linea Codigo.
-    * @return Nombre del mÃ©todo.
+    * @return Nombre del método.
     */
     static String nombreMetodo(String linea) {
         boolean comments = false;
@@ -211,7 +211,7 @@ abstract class Tools {
             }
         }
 
-        //Localizo el parÃ©ntesis.
+        //Localizo el paréntesis.
         int i;
         int pari = -1;
         int pard = -1;
@@ -225,10 +225,10 @@ abstract class Tools {
             return "";
         if (pard < 2)
             return "";
-        //Justamente antes estÃ¡ el nombre.
+        //Justamente antes está el nombre.
         String nombre = tokens.get(pari-1);
         //Justamente antes, si no es public, private, protected,
-        //synchronized o static (en cuyo caso no devuelve), estÃ¡ el tipo.
+        //synchronized o static (en cuyo caso no devuelve), está el tipo.
         //Si justamente antes, el tipo no es void, int, long, char, double
         //o float, es de tipo compuesto. Cambiar por barras los puntos.
         if (pari > 1) {
@@ -257,7 +257,7 @@ abstract class Tools {
         }
         if (tipo.equals(""))
             tipo = "V";
-        //Seguidamente leer los parÃ¡metros.
+        //Seguidamente leer los parámetros.
 
         String pars = "";
         
@@ -289,16 +289,16 @@ abstract class Tools {
         System.out.println("Linea: "+linea);
         System.out.println("Nombre: "+nombre);
         System.out.println("Tipo: "+tipo);
-        System.out.println("ParÃ¡metros: "+pars);
-        System.out.println("MÃ‰tODO: "+metodo);
+        System.out.println("Parámetros: "+pars);
+        System.out.println("MÉtODO: "+metodo);
 */
         return metodo;
     }
     
    /**
-    * Obtiene el nÃºmero de linea de una linea desensamblada.
+    * Obtiene el número de linea de una linea desensamblada.
     * @param linea Codigo.
-    * @return NÃºmero de linea, -1 si no es ninguna, -2 si es default.
+    * @return Número de linea, -1 si no es ninguna, -2 si es default.
     */
     static int numeroLinea(String linea) {
         StringTokenizer st = new StringTokenizer(linea,"\n\r\t ;");
@@ -324,9 +324,9 @@ abstract class Tools {
     }
     
     /**
-    * Obtiene el nombre de instrucciÃ³n de una linea determinada.
+    * Obtiene el nombre de instrucción de una linea determinada.
     * @param linea Codigo.
-    * @return Nombre de instrucciÃ³n, null si es ninguna, "-" si es switch.
+    * @return Nombre de instrucción, null si es ninguna, "-" si es switch.
     */
     static String nombreInstruccion(String linea) {
         StringTokenizer st = new StringTokenizer(linea,"\n\r\t ;{}()/");
@@ -399,12 +399,12 @@ abstract class Tools {
     }
    
    /**
-    * Busca el nÃºmero de linea donde estÃ¡ una instrucciÃ³n.
-    * @param cod CÃ³digo.
-    * @param ini Inicio del cÃ³digo.
-    * @param fin Final del cÃ³digo.
-    * @param nlinea NÃºmero de linea a buscar.
-    * @return NÃºmero de linea donde estÃ¡, -1 si no estÃ¡.
+    * Busca el número de linea donde está una instrucción.
+    * @param cod Código.
+    * @param ini Inicio del código.
+    * @param fin Final del código.
+    * @param nlinea Número de linea a buscar.
+    * @return Número de linea donde está, -1 si no está.
     */
     static int buscaInstruccion(List<String> cod,int ini, int fin, int nlinea) {
         int i;
@@ -417,12 +417,12 @@ abstract class Tools {
     }
 
    /**
-    * Busca el nÃºmero de lineas del cÃ³digo original de una porciÃ³n de cÃ³digo.
-    * @param cod CÃ³digo.
+    * Busca el número de lineas del código original de una porción de código.
+    * @param cod Código.
     * @param ini Primera linea donde buscar.
-    * @param fin Ãšltima linea donde buscar.
-    * @param inip Primera instrucciÃ³n porciÃ³n a buscar.
-    * @param finp Ãšltima instrucciÃ³n porciÃ³n a buscar.
+    * @param fin Última linea donde buscar.
+    * @param inip Primera instrucción porción a buscar.
+    * @param finp Última instrucción porción a buscar.
     * @return Inicio y fin en una lista, null si error.
     */
     static List<Integer> buscaOriginal(List<String> cod,int ini, int fin,
@@ -487,8 +487,8 @@ abstract class Tools {
      * Obtiene los nombres de clases contenidos en una lista de Strings.
      * @param cont Contenido de entrada.
      * @param clas Clase a buscar comienzo y fin.
-     * @param out Lista en la que se escribirÃ¡ comienzo y final.
-     * @.post Si se ha indicado clase a buscar, se rellenarÃ¡ la lista.
+     * @param out Lista en la que se escribirá comienzo y final.
+     * @.post Si se ha indicado clase a buscar, se rellenará la lista.
      * @return Listado de clases contenidas.
      */
     static List<String> listaClases(List<String> cont,String clas,

@@ -34,7 +34,7 @@ final class Program extends MatchableElement implements Serializable,Cloneable
     private static final long serialVersionUID = JSimil.serialVersionUID;
 
     /**
-     * BaterÃ­a de programas a la que pertenece el programa.
+     * Batería de programas a la que pertenece el programa.
      */
     private ProgramBattery bateria;
     
@@ -44,7 +44,7 @@ final class Program extends MatchableElement implements Serializable,Cloneable
     private List<CodeBlock> bloques;
     
     /**
-     * MÃ©todos que contiene el programa.
+     * Métodos que contiene el programa.
      */
     private List<CodeMethod> metodos;
     
@@ -72,7 +72,7 @@ final class Program extends MatchableElement implements Serializable,Cloneable
      * Constructor.
      * @param nombre Nombre del programa.
      * @param id Id del programa.
-     * @param bateria BaterÃ­a a la que pertenece el programa.
+     * @param bateria Batería a la que pertenece el programa.
      * @.post Ha sido inicializado un objeto programa.
      */
     protected Program(String nombre,int id,ProgramBattery bateria) {
@@ -89,13 +89,13 @@ final class Program extends MatchableElement implements Serializable,Cloneable
      
     /**
      * Encontrar clases en ficheros class y java.
-     * @param clasesClass relaciÃ³n clase -> fichero class.
-     * @param clasesJava relaciÃ³n clase -> fichero java.
+     * @param clasesClass relación clase -> fichero class.
+     * @param clasesJava relación clase -> fichero java.
      * @param ruta Ruta a explorar.
-     * @param config ConfiguraciÃ³n.
+     * @param config Configuración.
      * @.post Map clasesClass relleno.
      * @.post Map clasesJava relleno.
-     * @return Si habÃ­a clases o no.
+     * @return Si había clases o no.
      */
     private boolean cargaListaRecursiva(HashMap<String,String> clasesClass,
                                      HashMap<String,String> clasesJava,
@@ -224,8 +224,8 @@ final class Program extends MatchableElement implements Serializable,Cloneable
     
     /**
      * Desensambla recursivamente las clases.
-     * @param direc DirecciÃ³n raiz.
-     * @param config ConfiguraciÃ³n.
+     * @param direc Dirección raiz.
+     * @param config Configuración.
      * @.post Clases desensambladas.
      * @exception JSimilException Error desensamblando.
      * @exception JSimilException Abortando por error.
@@ -288,7 +288,7 @@ final class Program extends MatchableElement implements Serializable,Cloneable
     
     /**
      * Carga ficheros.
-     * @param direc DirecciÃ³n raiz.
+     * @param direc Dirección raiz.
      * @param ficheros Lista de ficheros a rellenar.
      * @.post Ficheros cargados.
      */
@@ -551,10 +551,10 @@ final class Program extends MatchableElement implements Serializable,Cloneable
                     i = 0;
                     while (
                             //Debe seguir si:
-                            //es mÃ¡s pequeÃ±o que min Y puede ser mÃ¡s grande que
+                            //es más pequeño que min Y puede ser más grande que
                             //min.
                             ((sima<=min && sima+(1-simmaxa)>=min)
-                            //no es mÃ¡s grande que max Y puede ser mÃ¡s grande
+                            //no es más grande que max Y puede ser más grande
                             //que max
                             || (sima<max && sima+(1-simmaxa)>=max)
                             //el error no es adecuado: 1-simmax<error
@@ -686,9 +686,9 @@ final class Program extends MatchableElement implements Serializable,Cloneable
                 i = 0;
                 while (
                         //Debe seguir si:
-                        //es mÃ¡s pequeÃ±o que min Y puede ser mÃ¡s grande que min.
+                        //es más pequeño que min Y puede ser más grande que min.
                         ((sima<=min && sima+(1-simmaxa)>=min)
-                        //no es mÃ¡s grande que max Y puede ser mÃ¡s grande que
+                        //no es más grande que max Y puede ser más grande que
                         //max
                         || (sima<max && sima+(1-simmaxa)>=max)
                         //el error no es adecuado: 1-simmax<error
@@ -829,12 +829,12 @@ final class Program extends MatchableElement implements Serializable,Cloneable
     /**
      * Cargar programa y subelementos.
      * Hace saltar eventos en errores ignorables.
-     * @param config ConfiguraciÃ³n.
+     * @param config Configuración.
      * @.post Crea los ficheros correspondientes.
      * @.post Crea los objetos fichero correspondientes a partir del programa.
      * @.post Carga esos ficheros a memoria.
      * @.post Crea el resto de objetos correspondientes a partir del programa.
-     * @.post Llama al mÃ©todo carga de esos objetos.
+     * @.post Llama al método carga de esos objetos.
      * @exception JSimilException Error copiando contenidos.
      * @exception JSimilException Abortando por error.
      */
@@ -1053,7 +1053,7 @@ final class Program extends MatchableElement implements Serializable,Cloneable
 
             }        
         }
-        //Compila todo el cÃ³digo de ese directorio temporal
+        //Compila todo el código de ese directorio temporal
         String listado = "";
         if (compilar) {
             for (i = 0;i < camposx.length;++i) {
@@ -1423,25 +1423,25 @@ final class Program extends MatchableElement implements Serializable,Cloneable
     }
     
     /**
-     * Devuelve la lista de mÃ©todos del programa.
-     * @return Lista de mÃ©todos.
+     * Devuelve la lista de métodos del programa.
+     * @return Lista de métodos.
      */
     List<CodeMethod> getMetodos() {
         return metodos;
     }
     
     /**
-     * Devuelve la baterÃ­a a la que pertenece el programa.
-     * @return BaterÃ­a a la que pertenece el programa.
+     * Devuelve la batería a la que pertenece el programa.
+     * @return Batería a la que pertenece el programa.
      */
     ProgramBattery getBateria() {
         return bateria;
     }
     
     /**
-     * Cambia la baterÃ­a a la que pertenece el programa.
-     * @param bateria BaterÃ­a a la que pertenece el programa.
-     * @.post BaterÃ­a cambiada.
+     * Cambia la batería a la que pertenece el programa.
+     * @param bateria Batería a la que pertenece el programa.
+     * @.post Batería cambiada.
      */
     void setBateria(ProgramBattery bateria) {
         this.bateria = bateria;

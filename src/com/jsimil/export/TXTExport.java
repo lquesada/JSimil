@@ -32,7 +32,7 @@ abstract public class TXTExport {
      * @param res Resultados a utilizar.
      * @param per Perfil a utilizar.
      * @param resume Resumir?
-     * @param limite Limite de resultados a exportar, si -1 no hay lÃ­mite.
+     * @param limite Limite de resultados a exportar, si -1 no hay límite.
      * @.post Escrito fichero.
      * @exception IOException No se puede crear el fichero.
      */

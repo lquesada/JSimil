@@ -9,7 +9,7 @@ import java.util.List;
 
 
 /**
- * Procesador paralelizado de baterÃ­a.
+ * Procesador paralelizado de batería.
  * @author elezeta
  */
 final class ParallelProgramBatteryProcessor {
@@ -86,7 +86,7 @@ final class ParallelProgramBatteryProcessor {
     protected List<Program> programas;
     
     /**
-     * BaterÃ­a a procesar.
+     * Batería a procesar.
      */
     protected ProgramBattery bateria;
     
@@ -96,12 +96,12 @@ final class ParallelProgramBatteryProcessor {
     protected MatchingProfile perfil;
     
     /**
-     * Cuenta con exclusiÃ³n mutua.
+     * Cuenta con exclusión mutua.
      */
     protected Integer cuenta;
     
     /**
-     * Obtener e incrementar cuenta con exclusiÃ³n mutua.
+     * Obtener e incrementar cuenta con exclusión mutua.
      * @return Cuenta actual.
      * @.post Cuenta incrementada.
      */
@@ -112,7 +112,7 @@ final class ParallelProgramBatteryProcessor {
     /**
      * Constructor.
      * @param programas Programas a cargar.
-     * @param bateria BaterÃ­a a cargar.
+     * @param bateria Batería a cargar.
      * @param perfil Perfil a utilizar.
      * @.post Objeto inicializado.
      */
@@ -126,7 +126,7 @@ final class ParallelProgramBatteryProcessor {
 
     /**
      * Procesar y devolver resultados.
-     * @param nhebras NÃºmero de hebras a utilizar.
+     * @param nhebras Número de hebras a utilizar.
      * @return Resultados obtenidos.
      */
     ProgramComparisonList getResultados(int nhebras) {

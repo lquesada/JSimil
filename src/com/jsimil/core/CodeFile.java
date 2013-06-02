@@ -50,9 +50,9 @@ final public class CodeFile implements Serializable {
     }
     
     /**
-     * Carga el contenido del fichero en cuesti√≥n a memoria.
+     * Carga el contenido del fichero en cuestiÛn a memoria.
      * @.post Cargado el fichero a memoria.
-     * @exception JSimilException La ruta no es v√°lida o accesible.
+     * @exception JSimilException La ruta no es v·lida o accesible.
      */
     void carga() throws JSimilException {
         String linea;

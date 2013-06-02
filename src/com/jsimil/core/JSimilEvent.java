@@ -30,7 +30,7 @@ final public class JSimilEvent extends EventObject implements Serializable {
     
     /**
      * Constructor.
-     * @param source Objeto que lanzÃ³ el evento.
+     * @param source Objeto que lanzó el evento.
      * @param tipo Tipo de evento lanzado.
      * @param mensaje Mensaje del evento lanzado.
      * @.post Objeto inicializado.

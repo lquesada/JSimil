@@ -20,10 +20,10 @@ final public class Language {
     /**
      * Lista de nombres de idiomas disponibles.
      */
-    private static String[] langn = {"Espa~ol","Espa√±ol con tildes","English"};
+    private static String[] langn = {"Espa~ol","EspaÒol con tildes","English"};
     
     /**
-     * C√≥digos de frases del idioma.
+     * CÛdigos de frases del idioma.
      */
     private static String[] cod = {
         "_0000_CLI_WELCOME_1",
@@ -460,7 +460,7 @@ final public class Language {
     };
             
     /**
-     * C√≥digo del idioma.
+     * CÛdigo del idioma.
      */
     private String s;
     
@@ -495,7 +495,7 @@ final public class Language {
         if (lang.equals("es") || lang.equals("est")) {
             n = "Espa~ol";
             if (lang.equals("est")) {
-                n = "Espa√±ol con tildes";
+                n = "EspaÒol con tildes";
             }            
             // "_0000_CLI_WELCOME_1"
             lc[0] = "JSimil $1 $2 ($3).";
@@ -512,29 +512,29 @@ final public class Language {
             //"_0006_CLI_HELP_3"
             lc[6] = " -h/--help                Muestra esta ayuda.";
             //"_0007_CLI_HELP_4"
-            lc[7] = " --langlist               Lista los c√≥digos de idiomas disponibles.";
+            lc[7] = " --langlist               Lista los cÛdigos de idiomas disponibles.";
             //"_0008_CLI_HELP_5"
             lc[8] = " -l/--lang <codigo>       Activa el idioma indicado.";
             //"_0009_CLI_HELP_6"
             lc[9] = " -v/--verbose             Modo verboso.";
             //"_0010_CLI_HELP_7"
-           lc[10] = " -n/--dont-process        No realizar procesamiento, s√≥lo carga y guardado.";
+           lc[10] = " -n/--dont-process        No realizar procesamiento, sÛlo carga y guardado.";
             //"_0011_CLI_HELP_8"
-           lc[11] = " --new-profile-to <fich>  Escribir un perfil vac√≠o al fichero indicado.";
+           lc[11] = " --new-profile-to <fich>  Escribir un perfil vacÌo al fichero indicado.";
             //"_0012_CLI_HELP_9"
-           lc[12] = " --new-config-to <fich>   Escribir una configuraci√≥n vac√≠a al fichero indicado.";
+           lc[12] = " --new-config-to <fich>   Escribir una configuraciÛn vacÌa al fichero indicado.";
             //"_0013_CLI_HELP_10"
-           lc[13] = " --new-battery-to <fich>  Escribir una bater√≠a vac√≠a al fichero indicado.";
+           lc[13] = " --new-battery-to <fich>  Escribir una baterÌa vacÌa al fichero indicado.";
             //"_0014_CLI_HELP_11"
            lc[14] = " --def-profile-to <fich>  Escribir el perfil por defecto al fichero indicado.";
             //"_0015_CLI_HELP_12"
-           lc[15] = " -b/--battery-load <fich> Cargar una bater√≠a desde el fichero indicado.";
+           lc[15] = " -b/--battery-load <fich> Cargar una baterÌa desde el fichero indicado.";
             //"_0016_CLI_HELP_13"
-           lc[16] = " --battery-save <fich>    Guardar la informaci√≥n de bater√≠a al fichero indicado.";
+           lc[16] = " --battery-save <fich>    Guardar la informaciÛn de baterÌa al fichero indicado.";
             //"_0017_CLI_HELP_14"
-           lc[17] = " -g/--battery-dump <fich> Guardar la bater√≠a completa al fichero indicado.";
+           lc[17] = " -g/--battery-dump <fich> Guardar la baterÌa completa al fichero indicado.";
             //"_0018_CLI_HELP_15"
-           lc[18] = " -t/--battery-path <ruta> Crea una bater√≠a a partir de la ruta indicada.";
+           lc[18] = " -t/--battery-path <ruta> Crea una baterÌa a partir de la ruta indicada.";
             //"_0019_CLI_HELP_16"
            lc[19] = " --dont-autoconfig        No autoconfigurar si hay error.";
             //"_0020_CLI_HELP_17"
@@ -544,29 +544,29 @@ final public class Language {
             //"_0022_CLI_HELP_19"
            lc[22] = " -d/--profile-def         Usar el perfil por defecto.";
             //"_0023_CLI_HELP_20"
-           lc[23] = " -a/--autoconfig          Generar una configuraci√≥n autom√°tica.";
+           lc[23] = " -a/--autoconfig          Generar una configuraciÛn autom·tica.";
             //"_0024_CLI_HELP_21"
-           lc[24] = " -c/--config-load <fich>  Cargar una configuraci√≥n desde el fichero indicado.";
+           lc[24] = " -c/--config-load <fich>  Cargar una configuraciÛn desde el fichero indicado.";
             //"_0025_CLI_HELP_22"
-           lc[25] = " --config-save <fich>     Guardar la configuraci√≥n al fichero indicado.";
+           lc[25] = " --config-save <fich>     Guardar la configuraciÛn al fichero indicado.";
             //"_0026_CLI_HELP_23"
            lc[26] = " -e/--export-html <dir>   Exportar informe de resultados en HTML al directorio"+rn+
                     "                            indicado.";
             //"_0027_CLI_HELP_24"
-           lc[27] = " --disable-only <lista>   Activar todos los programas de la bater√≠a salvo los"+rn+
+           lc[27] = " --disable-only <lista>   Activar todos los programas de la baterÌa salvo los"+rn+
                     "                            indicados para ser procesados (nombres separados por"+rn+
                     "                            comas).";
             //"_0028_CLI_HELP_25"
            lc[28] = " -s/--export-txt <fich>   Exportar informe de resultados en TXT al fichero"+rn+
                     "                            indicado.";
             //"_0029_CLI_HELP_26"
-           lc[29] = " --enable-only <lista>    Activar los programas de la bater√≠a indicados para ser"+rn+
+           lc[29] = " --enable-only <lista>    Activar los programas de la baterÌa indicados para ser"+rn+
                     "                            procesados (nombres separados por comas).";
             //"_0030_CLI_HELP_27",
            lc[30] = " -o/--output-standard     Mostrar por la salida estandar los resultados"+rn+
                     "                            completos obtenidos.";
             //"_0031_CLI_HELP_28"
-           lc[31] = " -q/--enable-all          Activar todos los programas de la bater√≠a indicados"+rn+
+           lc[31] = " -q/--enable-all          Activar todos los programas de la baterÌa indicados"+rn+
                     "                            para ser procesados.";
             //"_0032_CLI_HELP_29",
            lc[32] = " -r/--resume-standard     Mostrar por la salida estandar un resumen de los"+rn+
@@ -575,13 +575,13 @@ final public class Language {
            lc[33] = " -f/--force-overwrite     Forzar la sobreescritura de los ficheros de salida.";
             //"_0034_CLI_HELP_31",
            lc[34] = "Ten en cuenta que las cargas se realizan antes del procesamiento (si lo hubiera)"+rn+
-           "y los guardados se realizan despu√©s del procesamiento (si lo hubiera). En"+rn+
+           "y los guardados se realizan despuÈs del procesamiento (si lo hubiera). En"+rn+
            "cualquier caso, cualquier error cancela todos los guardados.";
             //"_0035_CLI_HELP_32",
            lc[35] = " -j/--export-resume <fic> Exportar resumen de resultados en TXT al fichero"+rn+
                     "                            indicado.";
             //"_0036_CLI_HELP_33", //--output-profile
-           lc[36] = " -i/--output-profile      Incluir informaci√≥n del perfil en las salidas.";
+           lc[36] = " -i/--output-profile      Incluir informaciÛn del perfil en las salidas.";
             //"_0037_CLI_ERROR_REPEATED_OUTPUT"
            lc[37] = "Objetivo de argumento de escritura repetido: $1";
             //"_0038_CLI_ERROR_REPEATED_ARGUMENT",
@@ -589,97 +589,97 @@ final public class Language {
             //"_0039_CLI_ERROR_NO_SUCH_LANGUAGE",
            lc[39] = "No existe el idioma: $1";
             //"_0040_CLI_ERROR_ARGUMENT_HYPHEN",
-           lc[40] = "No puede comenzar por gui√≥n par√°metro de argumento: $1";
+           lc[40] = "No puede comenzar por guiÛn par·metro de argumento: $1";
             // "_0041_CLI_ERROR_UNKNOWN_ARGUMENT_WITHOUT_PARAMETER"
-           lc[41] = "Argumento desconocido: $1 (sin par√°metro).";
+           lc[41] = "Argumento desconocido: $1 (sin par·metro).";
             //"_0042_CLI_ERROR_MULTIPLE_CONFIG_INPUT",
-           lc[42] = "M√∫ltiples entradas para configuraci√≥n: autoconfigurar y carga desde fichero.";
+           lc[42] = "M˙ltiples entradas para configuraciÛn: autoconfigurar y carga desde fichero.";
             //"_0043_CLI_ERROR_MULTIPLE_PROFILE_INPUT_1",
-           lc[43] = "M√∫ltiples entradas para perfil: por defecto y carga desde fichero.";
+           lc[43] = "M˙ltiples entradas para perfil: por defecto y carga desde fichero.";
             //"_0044_CLI_ERROR_MULTIPLE_BATTERY_INPUT",
-           lc[44] = "M√∫ltiples entradas para bater√≠a: por ruta y carga desde fichero.";
+           lc[44] = "M˙ltiples entradas para baterÌa: por ruta y carga desde fichero.";
             //"_0045_CLI_HELP_34"
            lc[45] = " --def-rprofile-to <fich> Escribir perfil reflex. por defecto al fichero dado.";
             //"_0046_CLI_HELP_35"
            lc[46] = " --rprofile-def           Usar el perfil reflexivo por defecto.";
             //"_0047_CLI_ERROR_MULTIPLE_PROFILE_INPUT_2",
-           lc[47] = "M√∫ltiples entradas para perfil: por defecto, reflexivo por defecto y fichero.";
+           lc[47] = "M˙ltiples entradas para perfil: por defecto, reflexivo por defecto y fichero.";
             //"_0048_CLI_ERROR_MULTIPLE_PROFILE_INPUT_3",
-           lc[48] = "M√∫ltiples entradas para perfil: reflexivo por defecto y carga desde fichero.";
+           lc[48] = "M˙ltiples entradas para perfil: reflexivo por defecto y carga desde fichero.";
             //"_0049_CLI_ERROR_MULTIPLE_PROFILE_INPUT_4",
-           lc[49] = "M√∫ltiples entradas para perfil: reflexivo por defecto y por defecto.";
+           lc[49] = "M˙ltiples entradas para perfil: reflexivo por defecto y por defecto.";
             //"_0050_CLI_ERROR_WRITING_NEW_CONFIG",
-           lc[50] = "Error escribiendo nueva configuraci√≥n vac√≠a en: $1.";
+           lc[50] = "Error escribiendo nueva configuraciÛn vacÌa en: $1.";
             //"_0051_CLI_ERROR_WRITING_NEW_PROFILE",
-           lc[51] = "Error escribiendo nuevo perfil vac√≠o en: $1.";
+           lc[51] = "Error escribiendo nuevo perfil vacÌo en: $1.";
             //"_0052_CLI_ERROR_WRITING_DEFAULT_PROFILE",
            lc[52] = "Error escribiendo perfil por defecto en: $1.";
             //"_0053_CLI_ERROR_WRITING_DEFAULT_REFLEXIVE_PROFILE",
            lc[53] = "Error escribiendo perfil reflexivo por defecto en: $1.";
             //"_0054_CLI_ERROR_WRITING_NEW_BATTERY",
-           lc[54] = "Error escribiendo nueva bater√≠a en: $1.";
+           lc[54] = "Error escribiendo nueva baterÌa en: $1.";
             //"_0055_CLI_WRITING_NEW_OR_DEFAULT_FILES",
-           lc[55] = "Escribiendo los ficheros vac√≠os o por defecto solicitados.";
+           lc[55] = "Escribiendo los ficheros vacÌos o por defecto solicitados.";
             //"_0056_CLI_WRITTEN_NEW_CONFIG",
-           lc[56] = "Escrita configuraci√≥n vac√≠a en: $1.";
+           lc[56] = "Escrita configuraciÛn vacÌa en: $1.";
             //"_0057_CLI_WRITTEN_NEW_PROFILE",
-           lc[57] = "Escrito perfil vac√≠o en: $1.";
+           lc[57] = "Escrito perfil vacÌo en: $1.";
             //"_0058_CLI_WRITTEN_DEFAULT_PROFILE",
            lc[58] = "Escrito perfil por defecto en: $1.";
             //"_0059_CLI_WRITTEN_DEFAULT_REFLEXIVE_PROFILE",
            lc[59] = "Escrito perfil reflexivo por defecto en: $1.";
             //"_0060_CLI_WRITTEN_NEW_BATTERY",       
-           lc[60] = "Escrita bater√≠a vac√≠a en: $1.";
+           lc[60] = "Escrita baterÌa vacÌa en: $1.";
             //"_0061_CLI_HELP_36",
-           lc[61] = "Ejemplo de ejecuci√≥n:";
+           lc[61] = "Ejemplo de ejecuciÛn:";
             //"_0062_CLI_HELP_37",
-           lc[62] = "Procesa la bater√≠a alojada en dir/ con perfil por defecto y autoconfiguraci√≥n.";
+           lc[62] = "Procesa la baterÌa alojada en dir/ con perfil por defecto y autoconfiguraciÛn.";
             //"_0063_CLI_LANGUAGE",
-           lc[63] = "  C√≥digo: $1 - Idioma: $2.";
+           lc[63] = "  CÛdigo: $1 - Idioma: $2.";
             //"_0064_CLI_DEFAULT_LANGUAGE",
-           lc[64] = "  C√≥digo: $1 - Idioma: $2 (por defecto).";
+           lc[64] = "  CÛdigo: $1 - Idioma: $2 (por defecto).";
             //"_0065_CLI_AVAILABLE_LANGUAGES",
            lc[65] = "Idiomas disponibles:";
             //"_0066_CLI_CANT_AUTOCONFIG",
-           lc[66] = "No se puede autoconfigurar. Utilice una configuraci√≥n manual.";
+           lc[66] = "No se puede autoconfigurar. Utilice una configuraciÛn manual.";
             //"_0067_CLI_AUTOCONFIG_OK",
-           lc[67] = "Autoconfiguraci√≥n realizada con √©xito.";
+           lc[67] = "AutoconfiguraciÛn realizada con Èxito.";
             //"_0068_CLI_CONFIGLOAD_OK",
-           lc[68] = "Configuraci√≥n cargada con √©xito desde el fichero: $1.";
+           lc[68] = "ConfiguraciÛn cargada con Èxito desde el fichero: $1.";
             //"_0069_CLI_CONFIGLOAD_NOT_OK_PATH",
-           lc[69] = "No se pudo cargar configuraci√≥n desde el fichero: $1 (ruta no accesible).";
+           lc[69] = "No se pudo cargar configuraciÛn desde el fichero: $1 (ruta no accesible).";
             //"_0070_CLI_CONFIGLOAD_NOT_OK_FORMAT",
-           lc[70] = "No se pudo cargar configuraci√≥n desde el fichero: $1 (formato no reconocido).";
+           lc[70] = "No se pudo cargar configuraciÛn desde el fichero: $1 (formato no reconocido).";
             //"_0071_CLI_CONFIGLOAD_TRYING_AUTOCONFIG",
-           lc[71] = "Intentando autoconfiguraci√≥n.";
+           lc[71] = "Intentando autoconfiguraciÛn.";
             //"_0072_CLI_PROFILELOAD_DEFAULT",
            lc[72] = "Perfil por defecto cargado.";
             //"_0073_CLI_PROFILELOAD_DEFAULTREFLEXIVE",
            lc[73] = "Perfil reflexivo por defecto cargado.";
             //"_0074_CLI_PROFILELOAD_OK",
-           lc[74] = "Perfil cargado con √©xito desde el fichero: $1.";
+           lc[74] = "Perfil cargado con Èxito desde el fichero: $1.";
             //"_0075_CLI_PROFILELOAD_NOT_OK_PATH",
            lc[75] = "No se pudo cargar perfil desde el fichero: $1 (ruta no accesible).";
             //"_0076_CLI_PROFILELOAD_NOT_OK_FORMAT",
            lc[76] = "No se pudo cargar perfil desde el fichero: $1 (formato no reconocido).";
             //"_0077_CLI_BATTERYPATH",
-           lc[77] = "Bater√≠a asignada por ruta: $1.";
+           lc[77] = "BaterÌa asignada por ruta: $1.";
             //"_0078_CLI_BATTERYLOAD_OK",
-           lc[78] = "Bater√≠a cargada con √©xito desde el fichero: $1.";
+           lc[78] = "BaterÌa cargada con Èxito desde el fichero: $1.";
             //"_0079_CLI_BATTERYLOADLOAD_NOT_OK_PATH",
-           lc[79] = "No se pudo cargar bater√≠a desde el fichero: $1 (ruta no accesible).";
+           lc[79] = "No se pudo cargar baterÌa desde el fichero: $1 (ruta no accesible).";
             //"_0080_CLI_BATTERYLOAD_NOT_OK_FORMAT",
-           lc[80] = "No se pudo cargar bater√≠a desde el fichero: $1 (formato no reconocido).";
+           lc[80] = "No se pudo cargar baterÌa desde el fichero: $1 (formato no reconocido).";
             //"_0081_CLI_CONFIG_VALIDATES",
-           lc[81] = "La configuraci√≥n es VALIDA.";
+           lc[81] = "La configuraciÛn es VALIDA.";
             //"_0082_CLI_BATTERY_VALIDATES",
-           lc[82] = "La bater√≠a es VALIDA.";
+           lc[82] = "La baterÌa es VALIDA.";
             //"_0083_CLI_PROFILE_VALIDATES",
            lc[83] = "El perfil es VALIDO.";
             //"_0084_CLI_CONFIG_NOT_VALIDATES",
-           lc[84] = "La configuraci√≥n NO es VALIDA.";
+           lc[84] = "La configuraciÛn NO es VALIDA.";
             //"_0085_CLI_BATTERY_NOT_VALIDATES",
-           lc[85] = "La bater√≠a NO es VALIDA.";
+           lc[85] = "La baterÌa NO es VALIDA.";
             //"_0086_CLI_PROFILE_NOT_VALIDATES",
            lc[86] = "El perfil NO es VALIDO.";
             //"_0087_CLI_CONFIG_ERR_COMPILER_PATH",
@@ -691,37 +691,37 @@ final public class Language {
             //"_0090_CLI_CONFIG_ERR_DISASSEMBLER_EXE",
            lc[90] = "El desensamblador no se puede ejecutar.";
             //"_0091_CLI_PROFILE_ERR_ZERO_OR_ONE",
-           lc[91] = "Se esperaba valor 0 o 1 para el par√°metro: $1.";
+           lc[91] = "Se esperaba valor 0 o 1 para el par·metro: $1.";
             //"_0092_CLI_PROFILE_ERR_BETWEEN_ZERO_AND_ONE",
-           lc[92] = "Se esperaba valor entre 0 y 1 para el par√°metro: $1.";
+           lc[92] = "Se esperaba valor entre 0 y 1 para el par·metro: $1.";
             //"_0093_CLI_PROFILE_ERR_NOT_VALID_MIN_MAX",
-           lc[93] = "El valor del par√°metro $1 debe ser mayor que el de $2.";
+           lc[93] = "El valor del par·metro $1 debe ser mayor que el de $2.";
             //"_0094_CLI_PROFILE_ERR_GREATER_ZERO",
-           lc[94] = "Se esperaba valor mayor que 0 para el par√°metro: $1.";
+           lc[94] = "Se esperaba valor mayor que 0 para el par·metro: $1.";
             //"_0095_CLI_BATTERY_ERR_NOT_ACCESIBLE_PATH",
-           lc[95] = "La ruta dada por la bater√≠a no es accesible.";
+           lc[95] = "La ruta dada por la baterÌa no es accesible.";
             //"_0096_CLI_BATTERY_ERR_NO_PROGRAMS_TO_COMPARE",
-           lc[96] = "No hay programas a comparar en la bater√≠a.";
+           lc[96] = "No hay programas a comparar en la baterÌa.";
             //"_0097_CLI_LOAD_BATTERY",
-           lc[97] = "Cargando bater√≠a.";
+           lc[97] = "Cargando baterÌa.";
             //"_0098_CLI_BATTERY_ERR_READING",
-           lc[98] = "Error leyendo los ficheros de los programas de la bater√≠a.";
+           lc[98] = "Error leyendo los ficheros de los programas de la baterÌa.";
             //"_0099_CLI_BATTERY_LOADED",
-           lc[99] = "Bater√≠a cargada con √©xito en $1s.";
+           lc[99] = "BaterÌa cargada con Èxito en $1s.";
             //"_0100_CLI_NOTHING_ELSE_TO_DO",
-          lc[100] = "No hay nada m√°s que hacer.";           
+          lc[100] = "No hay nada m·s que hacer.";           
             //"_0101_CLI_PROCESS",        
           lc[101] = "Procesando.";           
             //"_0102_CLI_PROCESS_DONE",        
-          lc[102] = "Procesamiento completo con √©xito en $1s.";           
+          lc[102] = "Procesamiento completo con Èxito en $1s.";           
             //"_0103_CLI_PROCESS_ERROR",        
-          lc[103] = "ERROR CR√çTICO DESCONOCIDO DURANTE EL PROCESO.";
+          lc[103] = "ERROR CRÕTICO DESCONOCIDO DURANTE EL PROCESO.";
             //"_0104_CLI_NO_PROFILE",        
           lc[104] = "No se ha indicado perfil.";
             //"_0105_CLI_HELP_38",
-          lc[105] = " -w/--force-battery-load  Forzar carga de los programas de la bater√≠a.";
+          lc[105] = " -w/--force-battery-load  Forzar carga de los programas de la baterÌa.";
             //"_0106_CLI_NOT_FORCED",
-          lc[106] = "La bater√≠a ya estaba cargada (usar -w para forzar carga).";
+          lc[106] = "La baterÌa ya estaba cargada (usar -w para forzar carga).";
             //"_0107_CLI_WELCOME_4",
           lc[107] = "JSimilCLI - Interfaz de Linea de Comandos para JSimil.";
             //"_0108_CLI_EVENT_DEBUG",
@@ -729,19 +729,19 @@ final public class Language {
             //"_0109_CLI_EVENT_ERROR_ENTRADA_SALIDA_DESENSAMBLADOR",
           lc[109] = "[*] Error entrada/salida desensamblador: $1.";
             //"_0110_CLI_EVENT_ERROR_CLASS_VACIO_O_NO_VALIDO",
-          lc[110] = "[*] Class vac√≠o o no v√°lido: $1.";
+          lc[110] = "[*] Class vacÌo o no v·lido: $1.";
             //"_0111_CLI_EVENT_ERROR_LEYENDO_FICHERO_JAVA",
           lc[111] = "[*] Error leyendo fichero java: $1.";
             //"_0112_CLI_EVENT_ERROR_LEYENDO_FICHERO_JAVAP",
           lc[112] = "[*] Error leyendo fichero javap: $1.";
             //"_0113_CLI_EVENT_ERROR_NINGUN_FICHERO_VALIDO_EN_PROGRAMA",
-          lc[113] = "[*] Ning√∫n fichero v√°lido en programa: $1.";
+          lc[113] = "[*] Ning˙n fichero v·lido en programa: $1.";
             //"_0114_CLI_EVENT_ERROR_COPIANDO_FICHERO_CLASS",
           lc[114] = "[*] Error copiando fichero class: $1.";
             //"_0115_CLI_EVENT_ERROR_COPIANDO_FICHERO_JAVA",
           lc[115] = "[*] Error copiando fichero java: $1.";
             //"_0116_CLI_EVENT_INTERRUPCION_COMPILANDO",
-          lc[116] = "[*] Interrupci√≥n compilando: $1.";
+          lc[116] = "[*] InterrupciÛn compilando: $1.";
             //"_0117_CLI_EVENT_EXPLORADO_APARTADO_Y_COMPILADO",
           lc[117] = "[*] Explorado, apartado y compilado: $1.";
             //"_0118_CLI_EVENT_ERROR_COMPILANDO",
@@ -749,11 +749,11 @@ final public class Language {
             //"_0119_CLI_EVENT_ERROR_DESENSAMBLANDO",
           lc[119] = "[*] Error desensamblando: $1.";
             //"_0120_CLI_EVENT_BATERIA_CARGADA",
-          lc[120] = "[*] Bater√≠a cargada.";
+          lc[120] = "[*] BaterÌa cargada.";
             //"_0121_CLI_EVENT_INTERRUPCION_DESENSAMBLANDO",
-          lc[121] = "[*] Interrupci√≥n desensamblando: $1.";
+          lc[121] = "[*] InterrupciÛn desensamblando: $1.";
             //"_0122_CLI_EVENT_FALTA_CODIGO_FUENTE",
-          lc[122] = "[*] Falta c√≥digo fuente: $1.";
+          lc[122] = "[*] Falta cÛdigo fuente: $1.";
             //"_0123_CLI_EVENT_NO_SE_PUEDE_CREAR_DIRECTORIO_TEMPORAL",
           lc[123] = "[*] No se puede crear directorio temporal: $1.";
             //"_0124_CLI_EVENT_DESENSAMBLADO_Y_CARGADO",
@@ -771,33 +771,33 @@ final public class Language {
             //"_0130_CLI_EVENT_EMPAREJADAS_CLASES",
           lc[130] = "[*] Emparejadas clases: $1.";
             //"_0131_CLI_EVENT_EMPAREJADOS_METODOS",
-          lc[131] = "[*] Emparejados m√©todos: $1.";
+          lc[131] = "[*] Emparejados mÈtodos: $1.";
             //"_0132_CLI_EVENT_EMPAREJADOS_PROGRAMAS",
           lc[132] = "[*] Emparejados programas: $1.";
             //"_0133_CLI_CONFIGSAVE_OK",
-          lc[133] = "Configuraci√≥n guardada con √©xito al fichero: $1.";
+          lc[133] = "ConfiguraciÛn guardada con Èxito al fichero: $1.";
             //"_0134_CLI_CONFIGSAVE_NOT_OK_PATH",
-          lc[134] = "No se pudo guardar configuraci√≥n al fichero: $1 (ruta no accesible).";
+          lc[134] = "No se pudo guardar configuraciÛn al fichero: $1 (ruta no accesible).";
             //"_0135_CLI_CONFIGSAVE_NOT_OK_ERR",
-          lc[135] = "No se pudo guardar configuraci√≥n al fichero: $1 (error escribiendo).";
+          lc[135] = "No se pudo guardar configuraciÛn al fichero: $1 (error escribiendo).";
             //"_0136_CLI_PROFILESAVE_OK",
-          lc[136] = "Perfil escrito con √©xito al fichero: $1.";
+          lc[136] = "Perfil escrito con Èxito al fichero: $1.";
             //"_0137_CLI_PROFILESAVE_NOT_OK_PATH",
           lc[137] = "No se pudo guardar perfil al fichero: $1 (ruta no accesible).";
             //"_0138_CLI_PROFILESAVE_NOT_OK_ERR",
           lc[138] = "No se pudo guardar perfil al fichero: $1 (error escribiendo).";
             //"_0139_CLI_BATTERYSAVE_OK",
-          lc[139] = "Bater√≠a guardada con √©xito al fichero: $1.";
+          lc[139] = "BaterÌa guardada con Èxito al fichero: $1.";
             //"_0140_CLI_BATTERYSAVE_NOT_OK_PATH",
-          lc[140] = "No se pudo guardar bater√≠a al fichero: $1 (ruta no accesible).";
+          lc[140] = "No se pudo guardar baterÌa al fichero: $1 (ruta no accesible).";
             //"_0141_CLI_BATTERYSAVE_NOT_OK_ERR",
-          lc[141] = "No se pudo guardar bater√≠a al fichero: $1 (error escribiendo).";
+          lc[141] = "No se pudo guardar baterÌa al fichero: $1 (error escribiendo).";
             //"_0142_CLI_BATTERYDUMP_OK",
-          lc[142] = "Bater√≠a vaciada con √©xito al fichero: $1.";
+          lc[142] = "BaterÌa vaciada con Èxito al fichero: $1.";
             //"_0143_CLI_BATTERYDUMP_NOT_OK_PATH",
-          lc[143] = "No se pudo vaciar bater√≠a al fichero: $1 (ruta no accesible).";
+          lc[143] = "No se pudo vaciar baterÌa al fichero: $1 (ruta no accesible).";
             //"_0144_CLI_BATTERYDUMP_NOT_OK_ERR",
-          lc[144] = "No se pudo vaciar bater√≠a al fichero: $1 (error escribiendo).";
+          lc[144] = "No se pudo vaciar baterÌa al fichero: $1 (error escribiendo).";
             //"_0145_CLI_HELP_39"
           lc[145] = " -m/--export-rxml <fich>  Exportar resumen de resultados en XML al fichero"+rn+
                     "                            indicado.";
@@ -805,13 +805,13 @@ final public class Language {
           lc[146] = " -x/--export-xml <fich>   Exportar informe de resultados en XML al fichero"+rn+
                     "                            indicado.";
             //"_0147_CLI_ERROR_MULTIPLE_ENABLED_1",
-          lc[147] = "M√∫ltiples activaciones de programa: todos, especificados, no especificados.";
+          lc[147] = "M˙ltiples activaciones de programa: todos, especificados, no especificados.";
             //"_0148_CLI_ERROR_MULTIPLE_ENABLED_2",
-          lc[148] = "M√∫ltiples activaciones de programa: todos, especificados.";
+          lc[148] = "M˙ltiples activaciones de programa: todos, especificados.";
             //"_0149_CLI_ERROR_MULTIPLE_ENABLED_3",
-          lc[149] = "M√∫ltiples activaciones de programa: todos, no especificados.";
+          lc[149] = "M˙ltiples activaciones de programa: todos, no especificados.";
             //"_0150_CLI_ERROR_MULTIPLE_ENABLED_4",
-          lc[150] = "M√∫ltiples activaciones de programa: especificados, no especificados.";
+          lc[150] = "M˙ltiples activaciones de programa: especificados, no especificados.";
             //"_0151_CLI_ALL_PROGRAMS_ENABLED",
           lc[151] = "Todos los programas han sido activados para el procesamiento.";
             //"_0152_CLI_ALL_PROGRAMS_DISABLED",
@@ -825,7 +825,7 @@ final public class Language {
             //"_0156_CLI_NO_PROGRAMS_ENABLED_NOR_DISABLED",
           lc[156] = "No se han activado ni desactivado programas para el procesamiento.";
             //"_0157_CLI_PROGRAM_LIST",
-          lc[157] = "Lista de programas de la bater√≠a:";
+          lc[157] = "Lista de programas de la baterÌa:";
             //"_0158_CLI_ENABLED_PROGRAM",
           lc[158] = "Programa: $1 - Estado: Activado para el procesamiento.";
             //"_0159_CLI_DISABLED_PROGRAM",
@@ -913,35 +913,35 @@ final public class Language {
             //"_0199_HTML_BANNER_1",
           lc[199] = "JSimil $1 - Detector de Similitudes en Programas Escritos en Java.";
             //"_0200_HTML_BACK",
-          lc[200] = "(volver atr√°s)";
+          lc[200] = "(volver atr·s)";
             //"_0201_HTML_BACK_TO_MAIN",
-          lc[201] = "(volver al √≠ndice)";
+          lc[201] = "(volver al Ìndice)";
             //"_0202_HTML_BANNER_2",
-          lc[202] = "P√°gina de resultados.";
+          lc[202] = "P·gina de resultados.";
             //"_0203_HTML_BANNER_FOOTER",
           lc[203] = "JSimil $1 - $2 ($3).";
             //"_0204_HTML_PROFILE_MINMAX",
-          lc[204] = "B√∫squeda exhaustiva realizada sobre los emparejamientos con similitud: $1-$2";
+          lc[204] = "B˙squeda exhaustiva realizada sobre los emparejamientos con similitud: $1-$2";
             //"_0205_HTML_PROFILE_ERROR",
-          lc[205] = "Error m√°ximo admitido para dichos emparejamientos: $1.";
+          lc[205] = "Error m·ximo admitido para dichos emparejamientos: $1.";
             //"_0206_HTML_PROFILE_REFLEXIVE_YES",
-          lc[206] = "Emparejamiento reflexivo (elementos de un programa, entre s√≠).";
+          lc[206] = "Emparejamiento reflexivo (elementos de un programa, entre sÌ).";
             //"_0207_HTML_PROFILE_REFLEXIVE_NO",
-          lc[207] = "Emparejamiento no reflexivo (elementos de programas distintos entre s√≠).";
+          lc[207] = "Emparejamiento no reflexivo (elementos de programas distintos entre sÌ).";
             //"_0208_HTML_PROFILE_DIFFERENCE_YES",
-          lc[208] = "B√∫squeda centrada en hallar diferencias.";
+          lc[208] = "B˙squeda centrada en hallar diferencias.";
             //"_0209_HTML_PROFILE_DIFFERENCE_NO",
-          lc[209] = "B√∫squeda centrada en hallar similitudes.";
+          lc[209] = "B˙squeda centrada en hallar similitudes.";
             //"_0210_HTML_PROFILE_PROG_OPTIMISM",
           lc[210] = "Optimismo para hallar similitudes en subelementos de programa: $1.";
             //"_0211_HTML_PROFILE_CLASS_OPTIMISM",
           lc[211] = "Optimismo para hallar similitudes en subelementos de clase: $1.";
             //"_0212_HTML_PROFILE_METHOD_OPTIMISM",          
-          lc[212] = "Optimismo para hallar similitudes en subelementos de m√©todo: $1.";
+          lc[212] = "Optimismo para hallar similitudes en subelementos de mÈtodo: $1.";
             //"_0213_HTML_PROFILE_INFORMATION",          
-          lc[213] = "Informaci√≥n de perfil:";
+          lc[213] = "InformaciÛn de perfil:";
             //"_0214_HTML_PROFILE_LIMIT",          
-          lc[214] = "M√°ximo del programa a explorar: $1.";
+          lc[214] = "M·ximo del programa a explorar: $1.";
             //"_0215_HTML_MATCHED_PROGRAMS",          
           lc[215] = "------";
             //"_0216_HTML_SIMILARITY",          
@@ -969,7 +969,7 @@ final public class Language {
             //"_0227_HTML_TYPE_BLOCK",
           lc[227] = "Bloque";
             //"_0228_HTML_TYPE_METHOD",
-          lc[228] = "M√©todo";
+          lc[228] = "MÈtodo";
             //"_0229_HTML_TYPE_CLASS",        
           lc[229] = "Clase";
             //"_0230_HTML_COMPARED_ELEMENTS",          
@@ -985,7 +985,7 @@ final public class Language {
             //"_0235_HTML_SHOWN_ELEMENTS",
           lc[235] = "Elementos mostrados:";          
             //"_0236_HTML_SOURCE_CODE",
-          lc[236] = "C√≥digo fuente:"; 
+          lc[236] = "CÛdigo fuente:"; 
             //"_0237_HTML_BYTECODE",
           lc[237] = "Bytecode:"; 
             //"_0238_HTML_NOT_AVAILABLE",
@@ -1003,47 +1003,47 @@ final public class Language {
             //"_0244_CLI_EXPORT_IHTML_EXISTS_2",
           lc[244] = "----";
             //"_0245_CLI_HELP_44",
-          lc[245] = " -y/--mind-size           Tener en cuenta el tama√±o de los programas al"+rn+
+          lc[245] = " -y/--mind-size           Tener en cuenta el tamaÒo de los programas al"+rn+
                     "                            ordenar los resultados.";
             //"_0246_CLI_CANT_DUMP_BATTERY_IF_NOT_LOADED",
-          lc[246] = "No se puede exportar bater√≠a: $1 (no est√° cargada).";
+          lc[246] = "No se puede exportar baterÌa: $1 (no est· cargada).";
             //"_0247_CLI_ONLY_A_PROGRAM",
-          lc[247] = "No se puede comparar un s√≥lo programa de forma no reflexiva.";
+          lc[247] = "No se puede comparar un sÛlo programa de forma no reflexiva.";
             //"_0248_CLI_EVENT_ERROR_ABORTANDO_POR_ERROR",
           lc[248] = "[*] Abortada carga de programa por error compilando o desensamblando: $1.";
             //"_0249_CLI_HELP_45",
-          lc[249] = " -u/--results-limit <n>   Exportar informaci√≥n de los n resultados m√°s"+rn+
+          lc[249] = " -u/--results-limit <n>   Exportar informaciÛn de los n resultados m·s"+rn+
                     "                            relevantes.";
             //"_0250_CLI_LIMITE_NO_VALIDO",
-          lc[250] = "No es un l√≠mite v√°lido: $1.";
+          lc[250] = "No es un lÌmite v·lido: $1.";
             //"_0251_HTML_PROFILE_METHOD_MULTIMATCH_YES",      
-          lc[251] = "Se permiten emparejamientos uno a muchos en los m√©todos.";
+          lc[251] = "Se permiten emparejamientos uno a muchos en los mÈtodos.";
             //"_0252_HTML_PROFILE_METHOD_MULTIMATCH_NO",          
-          lc[252] = "Se permiten emparejamientos uno a cero o uno en los m√©todos.";
+          lc[252] = "Se permiten emparejamientos uno a cero o uno en los mÈtodos.";
             //"_0253_HTML_PROFILE_CLASS_MULTIMATCH_YES",          
           lc[253] = "Se permiten emparejamientos uno a muchos en las clases.";
             //"_0254_HTML_PROFILE_CLASS_MULTIMATCH_NO",          
           lc[254] = "Se permiten emparejamientos uno a cero o uno en las clases.";
             //"_0255_HTML_PROFILE_CLASS_SAMEMATCH_YES",          
-          lc[255] = "S√≥lo se emparejan las clases de mismo nombre.";
+          lc[255] = "SÛlo se emparejan las clases de mismo nombre.";
             //"_0256_HTML_PROFILE_CLASS_SAMEMATCH_NO",          
           lc[256] = "Se pueden emparejar clases con nombre distinto.";
             //"_0257_HTML_PROFILE_METHOD_SAMEMATCH_YES",          
-          lc[257] = "S√≥lo se emparejan los m√©todos de mismo nombre y clase.";
+          lc[257] = "SÛlo se emparejan los mÈtodos de mismo nombre y clase.";
             //"_0258_HTML_PROFILE_METHOD_SAMEMATCH_NO",          
-          lc[258] = "Se pueden emparejar m√©todos con nombre y clase distintos.";
+          lc[258] = "Se pueden emparejar mÈtodos con nombre y clase distintos.";
             //"_0259_HTML_PROFILE_METHOD_CLASS_SAMEMATCH_YES",          
-          lc[259] = "S√≥lo se emparejan los m√©todos contenidos en clases de mismo nombre.";
+          lc[259] = "SÛlo se emparejan los mÈtodos contenidos en clases de mismo nombre.";
             //"_0260_HTML_PROFILE_METHOD_CLASS_SAMEMATCH_NO",          
-          lc[260] = "No es necesario que dos m√©todos est√©n contenidos en una clase de mismo nombre para que se emparejen.";
+          lc[260] = "No es necesario que dos mÈtodos estÈn contenidos en una clase de mismo nombre para que se emparejen.";
             //"_0261_HTML_PROFILE_PROG_DIF",  
-          lc[261] = "Ratio de diferencia m√°ximo admitido para comparar programas: $1.";
+          lc[261] = "Ratio de diferencia m·ximo admitido para comparar programas: $1.";
             //"_0262_HTML_ELEMENTO_NO_EMPAREJADO",
           lc[262] = "Elemento no emparejado.";
             //"_0263_CLI_EVENT_ERROR_COMPILANDO_MSG",
           lc[263] = "[*] Traza: $1.";
             //"_0264_CLI_HELP_46",
-          lc[264] = " --hide-errors            Ocultar errores de compilaci√≥n.";
+          lc[264] = " --hide-errors            Ocultar errores de compilaciÛn.";
             //"_0265_HTML_PAQUETES",                   
           lc[265] = "Ver paquetes";
             //"_0266_HTML_PAQUETES_PROGRAMA",                   
@@ -1059,7 +1059,7 @@ final public class Language {
             //"_0271_HTML_MATCHED_PROGRAMS_I_INSTRUCTIONS",          
           lc[271] = "Instrucciones";
             //"_0272_HTML_PAQUETES_MOSTRANDO",          
-          lc[272] = "Mostrando √∫nicamente los emparejamientos del paquete $1 del programa $2.";
+          lc[272] = "Mostrando ˙nicamente los emparejamientos del paquete $1 del programa $2.";
             //"_0273_HTML_INFLUENCIA",          
           lc[273] = "Influencia";
             //"_0274_HTML_PAQUETES_TODOS",                  
@@ -1076,7 +1076,7 @@ final public class Language {
           lc[279] = " -k/--export-diff <dir>   Exportar resultados en formato diff al directorio"+rn+
                     "                            indicado.";
             //"_0280_CLI_HELP_48",
-          lc[280] = " --diff-simil <real>      Usar la similitud m√≠nima indicada como umbral de"+rn+
+          lc[280] = " --diff-simil <real>      Usar la similitud mÌnima indicada como umbral de"+rn+
                     "                            diferencias en los resultados diff (0.0-100.0).";
             //"_0281_CLI_EXPORT_DIFFL_START",
           lc[281] = "Exportando resultados diff al directorio: $1.";
@@ -1089,7 +1089,7 @@ final public class Language {
             //"_0285_CLI_EXPORT_DIFF_ERROR",
           lc[285] = "Error exportando resultados diff al directorio: $1.";
             //"_0286_CLI_SIMIL_NO_VALIDA",
-          lc[286] = "No es una similitud v√°lida: $1.";
+          lc[286] = "No es una similitud v·lida: $1.";
             //"_0287_HTML_PROFILE_BLOCK_MULTIMATCH_YES",      
           lc[287] = "Se permiten emparejamientos uno a muchos en los bloques.";
             //"_0288_HTML_PROFILE_BLOCK_MULTIMATCH_NO",          
@@ -1099,11 +1099,11 @@ final public class Language {
             //"_0290_CLIP_WELCOME_4",
           lc[290] = "JSimilProfile - Gestor de Perfiles para JSimil.";
             //"_0291_CLIP_VERSION",
-          lc[291] = "Versi√≥n:";
+          lc[291] = "VersiÛn:";
             //"_0292_CLIP_AUTOR",
           lc[292] = "Autor:";
             //"_0293_CLIP_WEB",
-          lc[293] = "P√°gina web:";
+          lc[293] = "P·gina web:";
             //"_0294_CLIP_DESARROLLADO",
           lc[294] = "Desarrollado en:";
             //"_0295_CLIP_PROYECTO",
@@ -1121,11 +1121,11 @@ final public class Language {
             //"_0301_CLIP_SALIR",
           lc[301] = "Salir";
             //"_0302_CLIP_SALIR_DESC",
-          lc[302] = "Salir de la aplicaci√≥n";
+          lc[302] = "Salir de la aplicaciÛn";
             //"_0303_CLIP_ACERCA_DESC",
-          lc[303] = "Mostrar el di√°logo de informaci√≥n de la aplicaci√≥n";
+          lc[303] = "Mostrar el di·logo de informaciÛn de la aplicaciÛn";
             //"_0304_CLIP_CERRAR_DESC",
-          lc[304] = "Cerrar el di√°logo";
+          lc[304] = "Cerrar el di·logo";
             //"_0305_CLIP_CARGAR",
           lc[305] = "Cargar perfil";
             //"_0306_CLIP_CARGAR_DESC",
@@ -1167,19 +1167,19 @@ final public class Language {
             //"_0324_CLIP_PERFIL_NUEVO",
           lc[324] = "Nuevo perfil";
             //"_0325_CLIP_PERFIL_NUEVO_DESC",
-          lc[325] = "Eliminar la informaci√≥n del perfil actual y comenzar uno nuevo";
+          lc[325] = "Eliminar la informaciÛn del perfil actual y comenzar uno nuevo";
             //"_0326_CLIP_PERFIL_DEFECTO",
           lc[326] = "Perfil por defecto";
             //"_0327_CLIP_PERFIL_DEFECTO_DESC",
-          lc[327] = "Eliminar la informaci√≥n del perfil actual y comenzar uno a partir del perfil por defecto";
+          lc[327] = "Eliminar la informaciÛn del perfil actual y comenzar uno a partir del perfil por defecto";
             //"_0328_CLIP_PERFIL_DEFECTOREFLEX",
           lc[328] = "Perfil reflexivo por defecto";
             //"_0329_CLIP_PERFIL_DEFECTOREFLEX_DESC",
-          lc[329] = "Eliminar la informaci√≥n del perfil actual y comenzar uno a partir del perfil reflexivo por defecto";
+          lc[329] = "Eliminar la informaciÛn del perfil actual y comenzar uno a partir del perfil reflexivo por defecto";
             //"_0330_CLIP_PERFIL_MODIFTITULO",
           lc[330] = "No se han guardado los cambios";
             //"_0331_CLIP_PERFIL_MODIFTEXTO",          
-          lc[331] = "No se han guardado los cambios del perfil actual. Si realiza esta acci√≥n se perder√°n. ¬øEst√° seguro?";
+          lc[331] = "No se han guardado los cambios del perfil actual. Si realiza esta acciÛn se perder·n. øEst· seguro?";
             //"_0332_CLIP_PERFIL_HUELLA",
           lc[332] = "Huella del perfil";
             //"_0333_CLIP_PERFIL_PROPIEDADES",
@@ -1189,15 +1189,15 @@ final public class Language {
             //"_0335_CLIP_GUARDAR_DESC",
           lc[335] = "Guardar perfil al fichero actual";
             //"_0336_CLIP_PERFIL_MODIFTEXTOSAL",          
-          lc[336] = "No se han guardado los cambios del perfil actual. ¬øQuiere guardarlos antes de salir?";
+          lc[336] = "No se han guardado los cambios del perfil actual. øQuiere guardarlos antes de salir?";
             //"_0337_CLIP_ATRIB_REFLEXIVO_SI",          
-          lc[337] = "Emparejar los distintos elementos de un programa entre s√≠";
+          lc[337] = "Emparejar los distintos elementos de un programa entre sÌ";
             //"_0338_CLIP_ATRIB_REFLEXIVO_NO",              
-          lc[338] = "Emparejar elementos de distintos programas entre s√≠";
+          lc[338] = "Emparejar elementos de distintos programas entre sÌ";
             //"_0339_CLIP_ATRIB_REFLEXIVO_DESCRIPCION",              
-          lc[339] = "La opci√≥n de emparejamiento reflexivo permite indicar si se realizan procesamientos entre distintos programas, emparejando los elementos de uno de ellos con los elementos del otro, o si por el contrario se realizan procesamientos de cada uno de los programas consigo mismo, en cuyo caso se intentan emparejar los elementos del programa con otros elementos del mismo programa.\n\n"+
-                    "Se puede observar adem√°s que el emparejamiento reflexivo (cada programa consigo mismo) toma mucho menos tiempo, ya que se realiza un procesamiento por programa, mientras que para el emparejamiento no reflexivo se realizan (n^2-n)/2 procesamientos.\n\n"+
-                    "T√≠picamente se quieren comparar programas distintos, por lo que la opci√≥n por defecto es \""+lc[338]+"\".";
+          lc[339] = "La opciÛn de emparejamiento reflexivo permite indicar si se realizan procesamientos entre distintos programas, emparejando los elementos de uno de ellos con los elementos del otro, o si por el contrario se realizan procesamientos de cada uno de los programas consigo mismo, en cuyo caso se intentan emparejar los elementos del programa con otros elementos del mismo programa.\n\n"+
+                    "Se puede observar adem·s que el emparejamiento reflexivo (cada programa consigo mismo) toma mucho menos tiempo, ya que se realiza un procesamiento por programa, mientras que para el emparejamiento no reflexivo se realizan (n^2-n)/2 procesamientos.\n\n"+
+                    "TÌpicamente se quieren comparar programas distintos, por lo que la opciÛn por defecto es \""+lc[338]+"\".";
             //"_0340_CLIP_EDITANDO",              
           lc[340] = "Editando";
             //"_0341_CLIP_EDITANDO_MEMORIA",              
@@ -1209,7 +1209,7 @@ final public class Language {
             //"_0344_CLIP_SOBREESCRIBIR_TITULO",              
           lc[344] = "Sobreescribir fichero";
             //"_0345_CLIP_SOBREESCRIBIR",              
-          lc[345] = "El fichero escogido existe. ¬øDesea sobreescribirlo?";
+          lc[345] = "El fichero escogido existe. øDesea sobreescribirlo?";
             //"_0346_CLIP_TAB_GENERAL",           
           lc[346] = "General";
             //"_0347_CLIP_PROP_VELOCIDAD",
@@ -1217,25 +1217,25 @@ final public class Language {
             //"_0348_CLIP_PROP_DETALLE",
           lc[348] = "Detalle";
             //"_0349_CLIP_PROP_PRECISION",
-          lc[349] = "Precisi√≥n";
+          lc[349] = "PrecisiÛn";
             //"_0350_CLIP_PROP_SENSIBILIDAD",
           lc[350] = "Sensibilidad";
             //"_0351_CLIP_PROP_ASIMILACION",
-          lc[351] = "Asimilaci√≥n";
+          lc[351] = "AsimilaciÛn";
             //"_0352_CLIP_PROP_ESPECIALIZACION",
-          lc[352] = "Especializaci√≥n";
+          lc[352] = "EspecializaciÛn";
             //"_0353_CLIP_PROP_VELOCIDAD_DESC",
-          lc[353] = "La velocidad es indicador de la utilizaci√≥n de opciones para reducir el tiempo de procesamiento";
+          lc[353] = "La velocidad es indicador de la utilizaciÛn de opciones para reducir el tiempo de procesamiento";
           //"_0354_CLIP_PROP_DETALLE_DESC",
-          lc[354] = "El detalle es indicador de la cantidad de informaci√≥n que se obtendr√°";
+          lc[354] = "El detalle es indicador de la cantidad de informaciÛn que se obtendr·";
             //"_0355_CLIP_PROP_PRECISION_DESC",
-          lc[355] = "La precisi√≥n es indicador de c√≥mo de peque√±o ser√° el margen de error de los resultados";
+          lc[355] = "La precisiÛn es indicador de cÛmo de pequeÒo ser· el margen de error de los resultados";
             //"_0356_CLIP_PROP_SENSIBILIDAD_DESC",
           lc[356] = "La sensibilidad es indicador de la influencia de los resultados (positivos o negativos) en la similitud final";
             //"_0357_CLIP_PROP_ASIMILACION_DESC",
-          lc[357] = "La asimilaci√≥n es indicador del aprovechamiento del conocimiento de los datos para obtener mejores resultados";
+          lc[357] = "La asimilaciÛn es indicador del aprovechamiento del conocimiento de los datos para obtener mejores resultados";
             //"_0358_CLIP_PROP_ESPECIALIZACION_DESC",
-          lc[358] = "La especializaci√≥n es indicador de la cantidad de opciones llevadas al l√≠mite";
+          lc[358] = "La especializaciÛn es indicador de la cantidad de opciones llevadas al lÌmite";
             //"_0359_CLIP_HUELLA_EXTENSION",        
           lc[359] = "Portable Network Graphics";
             //"_0360_CLIP_Huella_GUARDA_TITULO",
@@ -1257,125 +1257,125 @@ final public class Language {
             //"_0368_CLIP_ATRIB_DIFFERENCE_SI",              
           lc[368] = "Buscar el peor emparejamiento";
             //"_0369_CLIP_ATRIB_DIFFERENCE_DESCRIPCION",
-          lc[369] = "La opci√≥n de objetivo del emparejamiento permite indicar si se buscan los mejores emparejamientos posibles o los peores emparejamientos posibles.\n\n"+
-                    "Obs√©rvese que si se escoge la opci√≥n \""+lc[368]+"\", el significado de las opciones de la pesta√±a emparejamientos se invierte (similitud m√°xima).\n\n"+
-                    "T√≠picamente se quieren obtener los mejores emparejamientos posibles, por lo que el valor por defecto para esta opci√≥n es \""+lc[367]+"\".\n\n";
+          lc[369] = "La opciÛn de objetivo del emparejamiento permite indicar si se buscan los mejores emparejamientos posibles o los peores emparejamientos posibles.\n\n"+
+                    "ObsÈrvese que si se escoge la opciÛn \""+lc[368]+"\", el significado de las opciones de la pestaÒa emparejamientos se invierte (similitud m·xima).\n\n"+
+                    "TÌpicamente se quieren obtener los mejores emparejamientos posibles, por lo que el valor por defecto para esta opciÛn es \""+lc[367]+"\".\n\n";
             //"_0370_CLIP_ATRIB_RETURNNULL",          
-          lc[370] = "Generar tambi√©n resultados para los elementos no emparejados";
+          lc[370] = "Generar tambiÈn resultados para los elementos no emparejados";
             //"_0371_CLIP_ATRIB_RETURNNULL_DESCRIPCION",
-          lc[371] = "La opci√≥n de generar resultados para los elementos no emparejados permite indicar si se quiere obtener m√°s informaci√≥n en los resultados generados, correspondiente a los elementos que no han sido emparejados debido a las restricciones o condiciones del perfil.\n\n"+
-                    "T√≠picamente se quieren observar √∫nicamente los emparejamientos realizados, por lo que el valor por defecto para esta opci√≥n es no generarlos.";
+          lc[371] = "La opciÛn de generar resultados para los elementos no emparejados permite indicar si se quiere obtener m·s informaciÛn en los resultados generados, correspondiente a los elementos que no han sido emparejados debido a las restricciones o condiciones del perfil.\n\n"+
+                    "TÌpicamente se quieren observar ˙nicamente los emparejamientos realizados, por lo que el valor por defecto para esta opciÛn es no generarlos.";
             //"_0372_CLIP_ATRIB_CLASSSAMENAME",          
-          lc[372] = "Emparejar clases entre s√≠ s√≥lo si tienen el mismo nombre";
+          lc[372] = "Emparejar clases entre sÌ sÛlo si tienen el mismo nombre";
             //"_0373_CLIP_ATRIB_CLASSSAMENAME_DESCRIPCION",
-          lc[373] = "La opci√≥n de emparejar s√≥lamente clases que se llamen igual permite indicar si se pueden emparejar dos clases cualesquiera o si s√≥lo se pueden emparejar las clases de mismo nombre.\n\n"+
-                    "En caso de saber que en una serie de programas las clases se van a llamar de la misma forma, es recomendable marcar esta opci√≥n, ya que se reducen los falsos positivos y aumenta la velocidad del procesamiento.\n\n"+
-                    "T√≠picamente se desconoce si el nombre de las clases coincide, por lo que el valor por defecto para esta opci√≥n es no emparejar √∫nicamente clases con el mismo nombre.";
+          lc[373] = "La opciÛn de emparejar sÛlamente clases que se llamen igual permite indicar si se pueden emparejar dos clases cualesquiera o si sÛlo se pueden emparejar las clases de mismo nombre.\n\n"+
+                    "En caso de saber que en una serie de programas las clases se van a llamar de la misma forma, es recomendable marcar esta opciÛn, ya que se reducen los falsos positivos y aumenta la velocidad del procesamiento.\n\n"+
+                    "TÌpicamente se desconoce si el nombre de las clases coincide, por lo que el valor por defecto para esta opciÛn es no emparejar ˙nicamente clases con el mismo nombre.";
             //"_0374_CLIP_ATRIB_METHODOFCLASSSAMENAME",          
-          lc[374] = "Emparejar m√©todos entre s√≠ s√≥lo si est√°n en una clase de mismo nombre";
+          lc[374] = "Emparejar mÈtodos entre sÌ sÛlo si est·n en una clase de mismo nombre";
             //"_0375_CLIP_ATRIB_METHODOFCLASSSAMENAME_DESCRIPCION",
-          lc[375] = "La opci√≥n de emparejar s√≥lamente m√©todos que est√©n contenidos en clases con el mismo nombre permite indicar si se pueden emparejar dos m√©todos cualesquiera o si s√≥lo se pueden emparejar aquellos m√©todos contenidos en clases de mismo nombre.\n\n"+
-                    "En caso de saber que en una serie de programas las clases se van a llamar de la misma forma, pero los nombres de los m√©todos de dichas clases pueden cambiar, es recomendable marcar esta opci√≥n, ya que se reducen los falsos positivos y aumenta la velocidad del procesamiento.\n\n"+
-                    "Tambi√©n es √∫til en los emparejamientos reflexivos para limitar los emparejamientos de los m√©todos de un mismo programa a aquellos que se encuentren en las mismas clases.\n\n"+
-                    "T√≠picamente se desconoce si el nombre de las clases coincide, por lo que el valor por defecto para esta opci√≥n es no emparejar √∫nicamente m√©todos contenidos en clases de mismo nombre.";
+          lc[375] = "La opciÛn de emparejar sÛlamente mÈtodos que estÈn contenidos en clases con el mismo nombre permite indicar si se pueden emparejar dos mÈtodos cualesquiera o si sÛlo se pueden emparejar aquellos mÈtodos contenidos en clases de mismo nombre.\n\n"+
+                    "En caso de saber que en una serie de programas las clases se van a llamar de la misma forma, pero los nombres de los mÈtodos de dichas clases pueden cambiar, es recomendable marcar esta opciÛn, ya que se reducen los falsos positivos y aumenta la velocidad del procesamiento.\n\n"+
+                    "TambiÈn es ˙til en los emparejamientos reflexivos para limitar los emparejamientos de los mÈtodos de un mismo programa a aquellos que se encuentren en las mismas clases.\n\n"+
+                    "TÌpicamente se desconoce si el nombre de las clases coincide, por lo que el valor por defecto para esta opciÛn es no emparejar ˙nicamente mÈtodos contenidos en clases de mismo nombre.";
             //"_0376_CLIP_ATRIB_METHODSAMENAME",          
-          lc[376] = "Emparejar m√©todos entre s√≠ s√≥lo si tienen el mismo nombre";
+          lc[376] = "Emparejar mÈtodos entre sÌ sÛlo si tienen el mismo nombre";
             //"_0377_CLIP_ATRIB_METHODSAMENAME_DESCRIPCION",
-          lc[377] = "La opci√≥n de emparejar s√≥lamente m√©todos que se llamen igual permite indicar si se pueden emparejar dos m√©todos cualesquiera o si s√≥lo se pueden emparejar los m√©todos de mismo nombre.\n\n"+
-                    "En caso de saber que en una serie de programas los distintos m√©todos de las clases se van a llamar de la misma forma, es recomendable marcar esta opci√≥n, ya que se reducen los falsos positivos y aumenta la velocidad del procesamiento.\n\n"+
-                    "T√≠picamente se desconoce si el nombre de los m√©todos coincide, por lo que el valor por defecto para esta opci√≥n es no emparejar √∫nicamente m√©todos con el mismo nombre.";
+          lc[377] = "La opciÛn de emparejar sÛlamente mÈtodos que se llamen igual permite indicar si se pueden emparejar dos mÈtodos cualesquiera o si sÛlo se pueden emparejar los mÈtodos de mismo nombre.\n\n"+
+                    "En caso de saber que en una serie de programas los distintos mÈtodos de las clases se van a llamar de la misma forma, es recomendable marcar esta opciÛn, ya que se reducen los falsos positivos y aumenta la velocidad del procesamiento.\n\n"+
+                    "TÌpicamente se desconoce si el nombre de los mÈtodos coincide, por lo que el valor por defecto para esta opciÛn es no emparejar ˙nicamente mÈtodos con el mismo nombre.";
             //"_0378_CLIP_ATRIB_CLASSALLOWMULTIMATCH",          
-          lc[378] = "Permitir emparejamientos m√∫ltiples para clases";
+          lc[378] = "Permitir emparejamientos m˙ltiples para clases";
             //"_0379_CLIP_ATRIB_CLASSALLOWMULTIMATCH_DESCRIPCION",
-          lc[379] = "La opci√≥n de emparejamientos m√∫ltiples para clases permite indicar si una clase de un programa puede emparejarse como m√°ximo con √∫nicamente una o con varias clases.\n\n"+
-                    "T√≠picamente se desconoce si una clase puede parecerse a varias otras clases, por lo que el valor por defecto para esta opci√≥n es permitir emparejamientos m√∫ltiples para clases.";
+          lc[379] = "La opciÛn de emparejamientos m˙ltiples para clases permite indicar si una clase de un programa puede emparejarse como m·ximo con ˙nicamente una o con varias clases.\n\n"+
+                    "TÌpicamente se desconoce si una clase puede parecerse a varias otras clases, por lo que el valor por defecto para esta opciÛn es permitir emparejamientos m˙ltiples para clases.";
             //"_0380_CLIP_ATRIB_METHODALLOWMULTIMATCH",          
-          lc[380] = "Permitir emparejamientos m√∫ltiples para m√©todos";
+          lc[380] = "Permitir emparejamientos m˙ltiples para mÈtodos";
             //"_0381_CLIP_ATRIB_METHODALOWMULTIMATCH_DESCRIPCION",
-          lc[381] = "La opci√≥n de emparejamientos m√∫ltiples para m√©todos permite indicar si un m√©todo puede emparejarse como m√°ximo con √∫nicamente uno o con varios m√©todos.\n\n"+
-                    "T√≠picamente se desconoce si un m√©todo puede parecerse a varios otros m√©todos, y de hecho puede proporcionar una gu√≠a de cara a refactorizaciones, por lo que el valor por defecto para esta opci√≥n es permitir emparejamientos m√∫ltiples para m√©todos.";
+          lc[381] = "La opciÛn de emparejamientos m˙ltiples para mÈtodos permite indicar si un mÈtodo puede emparejarse como m·ximo con ˙nicamente uno o con varios mÈtodos.\n\n"+
+                    "TÌpicamente se desconoce si un mÈtodo puede parecerse a varios otros mÈtodos, y de hecho puede proporcionar una guÌa de cara a refactorizaciones, por lo que el valor por defecto para esta opciÛn es permitir emparejamientos m˙ltiples para mÈtodos.";
             //"_0382_CLIP_ATRIB_BLOCKALLOWMULTIMATCH",          
-          lc[382] = "Permitir emparejamientos m√∫ltiples para bloques";
+          lc[382] = "Permitir emparejamientos m˙ltiples para bloques";
             //"_0383_CLIP_ATRIB_BLOCKALOWMULTIMATCH_DESCRIPCION"
-          lc[383] = "La opci√≥n de emparejamientos m√∫ltiples para bloques permite indicar si un bloque puede emparejarse como m√°ximo con √∫nicamente uno o con varios bloques.\n\n"+
-                    "T√≠picamente se desconoce si un bloque puede parecerse a varios otros bloques, y de hecho puede proporcionar una gu√≠a de cara a refactorizaciones e informaci√≥n relevante sobre copy&paste, por lo que el valor por defecto para esta opci√≥n es permitir emparejamientos m√∫ltiples para bloques.";
+          lc[383] = "La opciÛn de emparejamientos m˙ltiples para bloques permite indicar si un bloque puede emparejarse como m·ximo con ˙nicamente uno o con varios bloques.\n\n"+
+                    "TÌpicamente se desconoce si un bloque puede parecerse a varios otros bloques, y de hecho puede proporcionar una guÌa de cara a refactorizaciones e informaciÛn relevante sobre copy&paste, por lo que el valor por defecto para esta opciÛn es permitir emparejamientos m˙ltiples para bloques.";
             //"_0384_CLIP_ATRIB_PROGMATCHMINMAX_DESCRIPCION",
-          lc[384] = "La opci√≥n de programas para los que obtener resultados en detalle permite indicar en qu√© programas se centrar√° el estudio m√°s costoso.\n\n"+
-                    "Es razonable dedicar m√°s tiempo a obtener mejor informaci√≥n en programas que se encuentren en un rango de similitud determinado, generalmente superior a un umbral. De esta manera, se reduce el tiempo de procesamiento sin sacrificar resultados de inter√©s.\n\n"+
-                    "Cabe destacar que todos los programas se intentar√°n emparejar hasta estar seguro de que vaya a ocurrir una de las siguientes posibilidades:\n"+
-                    "a) Se garantice que la similitud del emparejamiento va a estar por debajo de la similitud m√≠nima.\n"+
-                    "b) Se garantice que la similitud del emparejamiento va a estar por encima de la similitud m√°xima.\n"+
-                    "c) Se garantice que la similitud del emparejamiento va a estar entre la similitud m√≠nima y la m√°xima.\n"+
-                    "S√≥lo en este √∫ltimo caso se continuar√° emparejando elementos de los programas.\n\n"+
-                    "T√≠picamente s√≥lo se consideran significativos emparejamientos con un amplio grado de similitud, por lo que el valor por defecto para esta opci√≥n es el rango 50%-100%.";
+          lc[384] = "La opciÛn de programas para los que obtener resultados en detalle permite indicar en quÈ programas se centrar· el estudio m·s costoso.\n\n"+
+                    "Es razonable dedicar m·s tiempo a obtener mejor informaciÛn en programas que se encuentren en un rango de similitud determinado, generalmente superior a un umbral. De esta manera, se reduce el tiempo de procesamiento sin sacrificar resultados de interÈs.\n\n"+
+                    "Cabe destacar que todos los programas se intentar·n emparejar hasta estar seguro de que vaya a ocurrir una de las siguientes posibilidades:\n"+
+                    "a) Se garantice que la similitud del emparejamiento va a estar por debajo de la similitud mÌnima.\n"+
+                    "b) Se garantice que la similitud del emparejamiento va a estar por encima de la similitud m·xima.\n"+
+                    "c) Se garantice que la similitud del emparejamiento va a estar entre la similitud mÌnima y la m·xima.\n"+
+                    "SÛlo en este ˙ltimo caso se continuar· emparejando elementos de los programas.\n\n"+
+                    "TÌpicamente sÛlo se consideran significativos emparejamientos con un amplio grado de similitud, por lo que el valor por defecto para esta opciÛn es el rango 50%-100%.";
             //"_0385_CLIP_ATRIB_PROGMATCHERROR_DESCRIPCION",
-          lc[385] = "La opci√≥n de error m√°ximo de la similitud permite indicar la precisi√≥n de la similitud para los programas en el rango de similitudes indicado a generar resultados en detalle.\n\n"+
-                    "Si el valor de esta opci√≥n es mayor que el rango de similitud, s√≠mplemente se diferencian los programas dentro del rango de los programas fuera del rango.\n\n"+
-                    "Obs√©rvese que a menor sea el error m√°ximo, m√°s a fondo se realizar√°n los emparejamientos, y se producir√°n m√°s resultados, no necesariamente m√°s significativos.\n\n"+
-                    "T√≠picamente se desea obtener informaci√≥n con una precisi√≥n razonable, que no sea demasiado peque√±a para no generar demasiados resultados no significativos, pero que tampoco sea muy grande, para poder distinguir entre los distintos grados de similitud en los resultados obtenidos, por lo que el valor por defecto para esta opci√≥n es un 2%. Esto significa que si se obtiene una similitud final de 95%, el rango de similitud efectiva es 93%-97%.";
+          lc[385] = "La opciÛn de error m·ximo de la similitud permite indicar la precisiÛn de la similitud para los programas en el rango de similitudes indicado a generar resultados en detalle.\n\n"+
+                    "Si el valor de esta opciÛn es mayor que el rango de similitud, sÌmplemente se diferencian los programas dentro del rango de los programas fuera del rango.\n\n"+
+                    "ObsÈrvese que a menor sea el error m·ximo, m·s a fondo se realizar·n los emparejamientos, y se producir·n m·s resultados, no necesariamente m·s significativos.\n\n"+
+                    "TÌpicamente se desea obtener informaciÛn con una precisiÛn razonable, que no sea demasiado pequeÒa para no generar demasiados resultados no significativos, pero que tampoco sea muy grande, para poder distinguir entre los distintos grados de similitud en los resultados obtenidos, por lo que el valor por defecto para esta opciÛn es un 2%. Esto significa que si se obtiene una similitud final de 95%, el rango de similitud efectiva es 93%-97%.";
             //"_0386_CLIP_ATRIB_PROGMATCHMINMAX",
           lc[386] = "Obtener resultados en detalle para los programas con similitud entre";
             //"_0387_CLIP_ATRIB_PROGMATCHMINMAX_MIN",
-          lc[387] = "Similitud m√≠nima";
+          lc[387] = "Similitud mÌnima";
             //"_0388_CLIP_ATRIB_PROGMATCHMINMAX_MAX",
-          lc[388] = "Similitud m√°xima";
+          lc[388] = "Similitud m·xima";
             //"_0389_CLIP_ATRIB_PROGMATCHERROR",
-          lc[389] = "Para estos programas, el error m√°ximo de la similitud debe ser";
+          lc[389] = "Para estos programas, el error m·ximo de la similitud debe ser";
             //"_0390_CLIP_ATRIB_PROGMATCHERROR_ERROR",
-          lc[390] = "Error m√°ximo";
+          lc[390] = "Error m·ximo";
             //"_0391_CLIP_ATRIB_BLOCKWEIGHT_DESC",
-          lc[391] = "Valores de ponderaci√≥n de los atributos de los bloques basados en n√∫mero de instrucciones";
+          lc[391] = "Valores de ponderaciÛn de los atributos de los bloques basados en n˙mero de instrucciones";
             //"_0392_CLIP_ATRIB_BLOCKWEIGHT_METHODSTART",
-          lc[392] = "¬øPrimer bloque?";
+          lc[392] = "øPrimer bloque?";
             //"_0393_CLIP_ATRIB_BLOCKWEIGHT_METHODEND",
-          lc[393] = "¬ø√öltimo bloque?";
+          lc[393] = "ø⁄ltimo bloque?";
             //"_0394_CLIP_ATRIB_BLOCKWEIGHT_INSTRUCTIONCOUNT",
           lc[394] = "N¬∫ total inst.";
             //"_0395_CLIP_ATRIB_BLOCKWEIGHT_TAB",
-          lc[395] = "Ponderaci√≥n";
+          lc[395] = "PonderaciÛn";
             //"_0396_CLIP_ATRIB_BLOCKWEIGHT_AYUDA",
-          lc[396] = "Estas opciones permiten indicar los pesos en la ponderaci√≥n de los atributos de los bloques en los emparejamientos.\n\n"+
-                    "Si un valor de ponderaci√≥n es 0, ese atributo no ser√° considerado al emparejar dos bloques.\n\n"+
-                    "Por lo dem√°s, el valor es relativo a los dem√°s, lo que quiere decir que si para un tipo de instrucci√≥n el valor es 1.00 y para otra es 2.00, se dar√° el doble de importancia al hecho de que aparezca una instrucci√≥n del segundo tipo en un bloque frente al hecho de que aparezca una instrucci√≥n del primer tipo en el mismo bloque.\n\n"+
-                    "T√≠picamente se desea una distribuci√≥n de ponderaciones inversamente proporcional a la posibilidad media de que una instrucci√≥n determinada aparezca en un bloque cualquiera. Los valores por defecto para estas opciones son una aproximaci√≥n de esta distribuci√≥n.\n\n"+
+          lc[396] = "Estas opciones permiten indicar los pesos en la ponderaciÛn de los atributos de los bloques en los emparejamientos.\n\n"+
+                    "Si un valor de ponderaciÛn es 0, ese atributo no ser· considerado al emparejar dos bloques.\n\n"+
+                    "Por lo dem·s, el valor es relativo a los dem·s, lo que quiere decir que si para un tipo de instrucciÛn el valor es 1.00 y para otra es 2.00, se dar· el doble de importancia al hecho de que aparezca una instrucciÛn del segundo tipo en un bloque frente al hecho de que aparezca una instrucciÛn del primer tipo en el mismo bloque.\n\n"+
+                    "TÌpicamente se desea una distribuciÛn de ponderaciones inversamente proporcional a la posibilidad media de que una instrucciÛn determinada aparezca en un bloque cualquiera. Los valores por defecto para estas opciones son una aproximaciÛn de esta distribuciÛn.\n\n"+
                     "Significado de los campos:\n"+
-                    "- \""+lc[392]+"\" significa que el bloque es inicial de un m√©todo, es decir, el primer bloque del m√©todo. Valdr√° 0 si el bloque no es inicial, y 1 si lo es.\n"+
-                    "- \""+lc[393]+"\" significa que el bloque es final de un m√©todo, es decir, es un bloque que acaba en return.\n"+
-                    "- \""+lc[394]+"\" significa el n√∫mero total de instrucciones del bloque, que es una forma de cuantificar el tama√±o del mismo.\n"+
-                    "- El resto de campos significan el n√∫mero de instrucciones de ese tipo determinado que hay en el bloque.";
+                    "- \""+lc[392]+"\" significa que el bloque es inicial de un mÈtodo, es decir, el primer bloque del mÈtodo. Valdr· 0 si el bloque no es inicial, y 1 si lo es.\n"+
+                    "- \""+lc[393]+"\" significa que el bloque es final de un mÈtodo, es decir, es un bloque que acaba en return.\n"+
+                    "- \""+lc[394]+"\" significa el n˙mero total de instrucciones del bloque, que es una forma de cuantificar el tamaÒo del mismo.\n"+
+                    "- El resto de campos significan el n˙mero de instrucciones de ese tipo determinado que hay en el bloque.";
             //"_0397_CLIP_ATRIB_MINIMUMINSTRUCTION_AYUDA",
-          lc[397] = "Las opciones de ignorar elementos con menos instrucciones de las indicadas permite indicar un umbral en el n√∫mero de instrucciones de los distintos tipos de elementos de manera que todos los elementos cuyo n√∫mero de instrucciones no alcance dicho umbral ser√°n obviados en el procesamiento.\n\n"+
-                    "Elevar los valores de estas opciones supondr√° un menor tiempo de procesamiento y una reducci√≥n de los falsos positivos, a costa de una p√©rdida progresiva y proporcional a estos valores de la precisi√≥n en los resultados.\n\n"+
-                    "Unos valores muy elevados proporcionar√°n unos resultados con validez muy espec√≠fica.\n\n"+
-                    "T√≠picamente se desean ignorar clases, m√©todos y bloques que por su extensi√≥n no son significativos en los resultados, por lo que por defecto se proporcionan unos valores de 20, 10 y 2 respectivamente.";
+          lc[397] = "Las opciones de ignorar elementos con menos instrucciones de las indicadas permite indicar un umbral en el n˙mero de instrucciones de los distintos tipos de elementos de manera que todos los elementos cuyo n˙mero de instrucciones no alcance dicho umbral ser·n obviados en el procesamiento.\n\n"+
+                    "Elevar los valores de estas opciones supondr· un menor tiempo de procesamiento y una reducciÛn de los falsos positivos, a costa de una pÈrdida progresiva y proporcional a estos valores de la precisiÛn en los resultados.\n\n"+
+                    "Unos valores muy elevados proporcionar·n unos resultados con validez muy especÌfica.\n\n"+
+                    "TÌpicamente se desean ignorar clases, mÈtodos y bloques que por su extensiÛn no son significativos en los resultados, por lo que por defecto se proporcionan unos valores de 20, 10 y 2 respectivamente.";
             //"_0398_CLIP_ATRIB_MINIMUMINSTRUCTION",
-          lc[398] = "Ignorar elementos de un tipo determinado con un n√∫mero de instrucciones menor al indicado";
+          lc[398] = "Ignorar elementos de un tipo determinado con un n˙mero de instrucciones menor al indicado";
             //"_0399_CLIP_ATRIB_MINIMUMINSTRUCTION_CLASS",
           lc[399] = "Tipo clase";
             //"_0400_CLIP_ATRIB_MINIMUMINSTRUCTION_METHOD",
-          lc[400] = "Tipo m√©todo";
+          lc[400] = "Tipo mÈtodo";
             //"_0401_CLIP_ATRIB_MINIMUMINSTRUCTION_BLOCK",
           lc[401] = "Tipo bloque";
             //"_0402_CLIP_ATRIB_RESTRICCIONES",
           lc[402] = "Restricciones";          
             //"_0403_CLIP_ORIENTACION_TAB",
-          lc[403] = "Orientaci√≥n";
+          lc[403] = "OrientaciÛn";
             //"_0404_CLIP_OPTIMISM",
           lc[404] = "Influencia en la similitud del encuadre del elemento complejo en el simple frente al enfoque opuesto";
             //"_0405_CLIP_CLASEYMETODOSINCLASE",
-          lc[405] = "Clase y m√©todo (sin clase)";
+          lc[405] = "Clase y mÈtodo (sin clase)";
             //"_0406_CLIP_METODOENCLASE",
-          lc[406] = "M√©todo (en clase)";
+          lc[406] = "MÈtodo (en clase)";
             //"_0407_CLIP_BLOQUE",
           lc[407] = "Bloque";
             //"_0408_CLIP_THRESHOLD",
           lc[408] = "Intentar emparejar las clases que representan porciones del programa entre";
             //"_0409_CLIP_PMIN",
-          lc[409] = "Porcentaje m√≠nimo";
+          lc[409] = "Porcentaje mÌnimo";
             //"_0410_CLIP_PMAX",
-          lc[410] = "Porcentaje m√°ximo";
+          lc[410] = "Porcentaje m·ximo";
             //"_0411_CLIP_DIFFERENCE",
-          lc[411] = "M√°xima diferencia proporcional de tama√±o para intentar emparejar dos elementos";
+          lc[411] = "M·xima diferencia proporcional de tamaÒo para intentar emparejar dos elementos";
             //"_0412_CLIP_PROGRAMA",
           lc[412] = "Programa";
             //"_0413_CLIP_CLASE",
@@ -1383,53 +1383,53 @@ final public class Language {
             //"_0414_CLIP_LIMIT",
           lc[414] = "Dejar de buscar al haber emparejado al menos el porcentaje indicado de dos elementos";
             //"_0415_CLIP_METODO",
-          lc[415] = "M√©todo";
+          lc[415] = "MÈtodo";
             //"_0416_CLIP_ACCEPTABLE",
-          lc[416] = "Similitud m√≠nima para emparejar inmediatamente dos elementos, ignorando el resto de posibilidades";
+          lc[416] = "Similitud mÌnima para emparejar inmediatamente dos elementos, ignorando el resto de posibilidades";
             //"_0417_CLIP_MINIMUM",
-          lc[417] = "Similitud m√≠nima necesaria para aceptar el emparejamiento de dos elementos";
+          lc[417] = "Similitud mÌnima necesaria para aceptar el emparejamiento de dos elementos";
             //"_0418_CLIP_OPTIMISM_HELP",
-          lc[418] = "Las opciones de influencia de la similitud permiten definir si utilizar una aproximaci√≥n de encuadrar los subelementos del elemento m√°s simple (con menos subelementos) a comparar, en los del m√°s complejo, o si usar una aproximaci√≥n opuesta (subelementos del elemento complejo en subelementos del elemento simple), o en usar como aproximaci√≥n ambas y ponderarlas con un peso determinado.\n\n"+
-                    "Si se deja un valor 0, se realizar√° el emparejamiento m√°s pesimista (subelementos del elemento complejo en subelementos del elemento simple). Es de esperar que con esta aproximaci√≥n se obtengan similitudes m√°s bajas y se reduzcan los falsos positivos.\n\n"+
-                    "Si se deja un valor 1, se realizar√° el emparejamiento m√°s optimista (subelementos del elemento simple en subelementos del elemento complejo). Con esta aproximaci√≥n se obtendr√°n similitudes m√°s altas, pero es m√°s probable que se obtengan algunos tipos de falsos positivos, en particular si no se utilizan restricciones.\n\n"+
+          lc[418] = "Las opciones de influencia de la similitud permiten definir si utilizar una aproximaciÛn de encuadrar los subelementos del elemento m·s simple (con menos subelementos) a comparar, en los del m·s complejo, o si usar una aproximaciÛn opuesta (subelementos del elemento complejo en subelementos del elemento simple), o en usar como aproximaciÛn ambas y ponderarlas con un peso determinado.\n\n"+
+                    "Si se deja un valor 0, se realizar· el emparejamiento m·s pesimista (subelementos del elemento complejo en subelementos del elemento simple). Es de esperar que con esta aproximaciÛn se obtengan similitudes m·s bajas y se reduzcan los falsos positivos.\n\n"+
+                    "Si se deja un valor 1, se realizar· el emparejamiento m·s optimista (subelementos del elemento simple en subelementos del elemento complejo). Con esta aproximaciÛn se obtendr·n similitudes m·s altas, pero es m·s probable que se obtengan algunos tipos de falsos positivos, en particular si no se utilizan restricciones.\n\n"+
                     "Si se utiliza un valor entre 0 y 1, se realizan ambos emparejamientos, se ofrecen todos los resultados en ambos sentidos, y se considera similitud final (100%-influencia*pesimista)+(influencia*optimista).\n\n"+
-                    "Obs√©rvese que al utilizar un emparejamiento intermedio se est√° duplicando el tiempo de procesamiento.\n\n"+
-                    "T√≠picamente se desea realizar un emparejamiento veloz y obtener menos falsos positivos, por lo que el valor por defeto para esta opci√≥n es 0.";
+                    "ObsÈrvese que al utilizar un emparejamiento intermedio se est· duplicando el tiempo de procesamiento.\n\n"+
+                    "TÌpicamente se desea realizar un emparejamiento veloz y obtener menos falsos positivos, por lo que el valor por defeto para esta opciÛn es 0.";
             //"_0419_CLIP_THRESHOLD_HELP",
-          lc[419] = "La opci√≥n de emparejar clases que representan una porci√≥n determinada del programa permite definir qu√© clases se intentar√°n emparejar como tales y cuales se descompondr√°n en subelementos.\n\n"+
-                    "Obs√©rvese que en cualquier caso, una clase que no haya resultado efectivamente emparejada con otra, ser√° descompuesta en subelementos.\n\n"+
-                    "El uso de esta opci√≥n puede reducir el tiempo de procesamiento si se efect√∫an emparejamientos entre clases o puede incrementarlo si no se efect√∫an.\n\n"+
-                    "T√≠picamente se desea claridad en los resultados, por lo que por defecto se intentan emparejar todas las clases del programa.";
+          lc[419] = "La opciÛn de emparejar clases que representan una porciÛn determinada del programa permite definir quÈ clases se intentar·n emparejar como tales y cuales se descompondr·n en subelementos.\n\n"+
+                    "ObsÈrvese que en cualquier caso, una clase que no haya resultado efectivamente emparejada con otra, ser· descompuesta en subelementos.\n\n"+
+                    "El uso de esta opciÛn puede reducir el tiempo de procesamiento si se efect˙an emparejamientos entre clases o puede incrementarlo si no se efect˙an.\n\n"+
+                    "TÌpicamente se desea claridad en los resultados, por lo que por defecto se intentan emparejar todas las clases del programa.";
             //"_0420_CLIP_DIFFERENCE_HELP",
-          lc[420] = "Las opciones de m√°xima diferencia proporcional de tama√±o permiten indicar umbrales de manera que dos elementos cuyos tama√±os est√©n desproporcionados por encima de ese umbral no ser√°n emparejados.\n\n"+
-                    "Conforme este umbral crece, se permiten m√°s emparejamientos.\n\n"+
-                    "Es razonable dejar un margen para estos emparejamientos, pero si el umbral es muy grande se perder√° mucha velocidad en intentar emparejar elementos con los que dificilmente se obtengan similitudes elevadas.\n\n"+
-                    "T√≠picamente se desea un procesamiento veloz sin dejar de comprobar los elementos m√°s significativos, as√≠ que por defecto se considera un valor de 40% para esta opci√≥n.";
+          lc[420] = "Las opciones de m·xima diferencia proporcional de tamaÒo permiten indicar umbrales de manera que dos elementos cuyos tamaÒos estÈn desproporcionados por encima de ese umbral no ser·n emparejados.\n\n"+
+                    "Conforme este umbral crece, se permiten m·s emparejamientos.\n\n"+
+                    "Es razonable dejar un margen para estos emparejamientos, pero si el umbral es muy grande se perder· mucha velocidad en intentar emparejar elementos con los que dificilmente se obtengan similitudes elevadas.\n\n"+
+                    "TÌpicamente se desea un procesamiento veloz sin dejar de comprobar los elementos m·s significativos, asÌ que por defecto se considera un valor de 40% para esta opciÛn.";
             //"_0421_CLIP_LIMIT_HELP",
-          lc[421] = "Las opciones de l√≠mite de emparejamiento permiten indicar un porcentaje m√°ximo de similitud hallada tras el cual se dejan de explorar los elementos.\n\n"+
-                    "Esto es, si mientras se est√° emparejando un elemento se observa que se ha obtenido una similitud mayor al umbral indicado, se cesa el emparejamiento.\n\n"+
-                    "Como los elementos se emparejan por orden de tama√±o, es una opci√≥n razonable que reducir√° el tiempo de procesamiento sin sacrificar resultados.\n\n"+
-                    "T√≠picamente se desea un compromiso entre velocidad y correctitud de los resultados, por ello por defecto se limita el emparejamiento hasta el 90% de similitud.";
+          lc[421] = "Las opciones de lÌmite de emparejamiento permiten indicar un porcentaje m·ximo de similitud hallada tras el cual se dejan de explorar los elementos.\n\n"+
+                    "Esto es, si mientras se est· emparejando un elemento se observa que se ha obtenido una similitud mayor al umbral indicado, se cesa el emparejamiento.\n\n"+
+                    "Como los elementos se emparejan por orden de tamaÒo, es una opciÛn razonable que reducir· el tiempo de procesamiento sin sacrificar resultados.\n\n"+
+                    "TÌpicamente se desea un compromiso entre velocidad y correctitud de los resultados, por ello por defecto se limita el emparejamiento hasta el 90% de similitud.";
             //"_0422_CLIP_ACCEPTABLE_HELP",
-          lc[422] = "Las opciones de similitud m√≠nima para emparejar inmediatamente dos elementos permiten indicar un umbral de similitud que, al ser superado en el emparejamiento de dos elementos, provoca que se dejen de intentar otros emparejamientos para los elementos en cuesti√≥n.\n\n"+
+          lc[422] = "Las opciones de similitud mÌnima para emparejar inmediatamente dos elementos permiten indicar un umbral de similitud que, al ser superado en el emparejamiento de dos elementos, provoca que se dejen de intentar otros emparejamientos para los elementos en cuestiÛn.\n\n"+
                     "Conforme este umbral aumenta se obtienen peores emparejamientos y el tiempo de procesamiento disminuye.\n\n"+
-                    "No obstante, dejando de lado los resultados en s√≠, y considerando √∫nicamente la similitud resultante de los emparejamientos de los programas, utilizar esta opci√≥n es razonable.\n\n"+
-                    "T√≠picamente se desea un compromiso entre velocidad y correctitud de los resultados, por ello por defecto se aceptan los emparejamientos con similitud superior o igual a un 95%.";
+                    "No obstante, dejando de lado los resultados en sÌ, y considerando ˙nicamente la similitud resultante de los emparejamientos de los programas, utilizar esta opciÛn es razonable.\n\n"+
+                    "TÌpicamente se desea un compromiso entre velocidad y correctitud de los resultados, por ello por defecto se aceptan los emparejamientos con similitud superior o igual a un 95%.";
             //"_0423_CLIP_MINIMUM_HELP",
-          lc[423] = "Las opciones de similitud m√≠nima necesaria para emparejar dos elementos permiten indicar un umbral de similitud que debe ser superado para que un emparejamiento se considere efectivo.\n\n"+
-                    "Conforme este umbral aumenta se obtienen menos emparejamientos y el n√∫mero de falsos positivos se reduce.\n\n"+
-                    "T√≠picamente se desea obtener unos resultados con un emparejamiento m√≠nimo razonable, aunque tambi√©n se quieren observar los resultados con emparejamientos parciales. Por ello, el valor por defecto para esta opci√≥n es del 85% para las clases y del 30% para el resto de elementos.";
+          lc[423] = "Las opciones de similitud mÌnima necesaria para emparejar dos elementos permiten indicar un umbral de similitud que debe ser superado para que un emparejamiento se considere efectivo.\n\n"+
+                    "Conforme este umbral aumenta se obtienen menos emparejamientos y el n˙mero de falsos positivos se reduce.\n\n"+
+                    "TÌpicamente se desea obtener unos resultados con un emparejamiento mÌnimo razonable, aunque tambiÈn se quieren observar los resultados con emparejamientos parciales. Por ello, el valor por defecto para esta opciÛn es del 85% para las clases y del 30% para el resto de elementos.";
             //"_0424_CLIP_UMBRALES_TAB",
           lc[424] = "Umbrales";
             //"_0425_CLIP_EMPAREJAMIENTOS_TAB",
           lc[425] = "Emparejamientos";
             //"_0426_CLIP_METODOSINCLASE",
-          lc[426] = "M√©todo (sin clase)";
+          lc[426] = "MÈtodo (sin clase)";
             //"_0427_CLIP_HUELLA_HELP",
-          lc[427] = "La huella del perfil muestra una representaci√≥n gr√°fica de las propiedades del perfil.\n\n"+
-                    "Proporciona retroalimentaci√≥n visual r√°pida y sirve de gu√≠a inmediata para detectar posibles errores que hayan podido cometerse durante la confecci√≥n del perfil.\n\n";
+          lc[427] = "La huella del perfil muestra una representaciÛn gr·fica de las propiedades del perfil.\n\n"+
+                    "Proporciona retroalimentaciÛn visual r·pida y sirve de guÌa inmediata para detectar posibles errores que hayan podido cometerse durante la confecciÛn del perfil.\n\n";
             //"_0428_CLIP_ATRIBS_HELP",
-          lc[428] = "Las propiedades del perfil proporcionan una s√≠ntesis de distintos aspectos del perfil.\n\n"+
+          lc[428] = "Las propiedades del perfil proporcionan una sÌntesis de distintos aspectos del perfil.\n\n"+
                     "Estos son los significados de las distintas propiedades:\n"+
                     "- "+lc[353]+".\n"+
                     "- "+lc[354]+".\n"+
@@ -1438,9 +1438,9 @@ final public class Language {
                     "- "+lc[358]+".\n"+
                     "- "+lc[357]+".";
             //"_0429_CLIP_ENTRA",
-          lc[429] = "\n      ¬°Bienvenido al Gestor de Perfiles de JSimil!\n\nSoy la ayuda contextual, te ofrecer√© explicaciones y ejemplos de las distintas opciones cuando las comiences a modificar.";
+          lc[429] = "\n      °Bienvenido al Gestor de Perfiles de JSimil!\n\nSoy la ayuda contextual, te ofrecerÈ explicaciones y ejemplos de las distintas opciones cuando las comiences a modificar.";
             //"_0430_CLI_HELP_49",
-          lc[430] = " -z/--threads <num>       N√∫mero de hebras que se van a utilizar en carga y"+rn+
+          lc[430] = " -z/--threads <num>       N˙mero de hebras que se van a utilizar en carga y"+rn+
                     "                            procesamiento.";
 
           if (1 == 1);          
@@ -1448,20 +1448,20 @@ final public class Language {
               for (i = 0;i < size;++i) {
                   if (cod[i].contains("_CLI_")) {
                       String sa = lc[i];
-                      sa = sa.replace("√°","a");
-                      sa = sa.replace("√©","e");
-                      sa = sa.replace("√≠","i");
-                      sa = sa.replace("√≥","o");
-                      sa = sa.replace("√∫","u");
-                      sa = sa.replace("√Å","A");
-                      sa = sa.replace("√â","E");
-                      sa = sa.replace("√ç","I");
-                      sa = sa.replace("√ì","O");
-                      sa = sa.replace("√ö","U");
-                      sa = sa.replace("√±","~");
-                      sa = sa.replace("√ë","~");
-                      sa = sa.replace("¬ø"," ");
-                      sa = sa.replace("¬°"," ");
+                      sa = sa.replace("·","a");
+                      sa = sa.replace("È","e");
+                      sa = sa.replace("Ì","i");
+                      sa = sa.replace("Û","o");
+                      sa = sa.replace("˙","u");
+                      sa = sa.replace("¡","A");
+                      sa = sa.replace("…","E");
+                      sa = sa.replace("Õ","I");
+                      sa = sa.replace("”","O");
+                      sa = sa.replace("⁄","U");
+                      sa = sa.replace("Ò","~");
+                      sa = sa.replace("—","~");
+                      sa = sa.replace("ø"," ");
+                      sa = sa.replace("°"," ");
                       lc[i] = sa;
                   }              
               }
@@ -2178,7 +2178,7 @@ final public class Language {
             //"_0344_CLIP_SOBREESCRIBIR_TITULO",              
           lc[344] = "Overwrite file";
             //"_0345_CLIP_SOBREESCRIBIR",              
-          lc[345] = "Chosen file exists. ¬øDo you want to overwrite it?";
+          lc[345] = "Chosen file exists. øDo you want to overwrite it?";
             //"_0346_CLIP_TAB_GENERAL",           
           lc[346] = "General";
             //"_0347_CLIP_PROP_VELOCIDAD",
@@ -2427,18 +2427,18 @@ final public class Language {
               for (i = 0;i < size;++i) {
                   if (cod[i].contains("_HTML_")) {
                       String sa = lc[i];
-                      sa = sa.replace("√°","&aacute;");
-                      sa = sa.replace("√©","&eacute;");
-                      sa = sa.replace("√≠","&iacute;");
-                      sa = sa.replace("√≥","&oacute;");
-                      sa = sa.replace("√∫","&uacute;");
-                      sa = sa.replace("√Å","&Aacute;");
-                      sa = sa.replace("√â","&Eacute;");
-                      sa = sa.replace("√ç","&Iacute;");
-                      sa = sa.replace("√ì","&Oacute;");
-                      sa = sa.replace("√ö","&Uacute;");
-                      sa = sa.replace("√±","&ntilde;");
-                      sa = sa.replace("√ë","&Ntilde;");
+                      sa = sa.replace("·","&aacute;");
+                      sa = sa.replace("È","&eacute;");
+                      sa = sa.replace("Ì","&iacute;");
+                      sa = sa.replace("Û","&oacute;");
+                      sa = sa.replace("˙","&uacute;");
+                      sa = sa.replace("¡","&Aacute;");
+                      sa = sa.replace("…","&Eacute;");
+                      sa = sa.replace("Õ","&Iacute;");
+                      sa = sa.replace("”","&Oacute;");
+                      sa = sa.replace("⁄","&Uacute;");
+                      sa = sa.replace("Ò","&ntilde;");
+                      sa = sa.replace("—","&Ntilde;");
                       lc[i] = sa;
                   }              
               }
@@ -2447,8 +2447,8 @@ final public class Language {
     }
     
     /**
-     * Devuelve el n√∫mero de lenguajes disponibles.
-     * @return N√∫mero de lenguajes disponibles.
+     * Devuelve el n˙mero de lenguajes disponibles.
+     * @return N˙mero de lenguajes disponibles.
      */
     static public int getLangsNum() {
         return langs.length;
@@ -2456,7 +2456,7 @@ final public class Language {
     
     /**
      * Devuelve el nombre del lenguaje solicitado.
-     * @param i N√∫mero de lenguaje preguntado.
+     * @param i N˙mero de lenguaje preguntado.
      * @return Nombre del lenguaje solicitado.
      */
     static public String getLangsCod(int i) throws IndexOutOfBoundsException {
@@ -2465,7 +2465,7 @@ final public class Language {
     
     /**
      * Devuelve el nombre del lenguaje solicitado.
-     * @param i N√∫mero de lenguaje preguntado.
+     * @param i N˙mero de lenguaje preguntado.
      * @return Nombre del lenguaje solicitado.
      */
     static public String getLangsName(int i) throws IndexOutOfBoundsException {
@@ -2473,7 +2473,7 @@ final public class Language {
     }
     
     /**
-     * Devuelve la frase del lenguaje con 0 par√É¬°metros solicitada.
+     * Devuelve la frase del lenguaje con 0 par·metros solicitada.
      * @return Frase del lenguaje solicitada.
      */
     public String getFrase(int i) {
@@ -2481,8 +2481,8 @@ final public class Language {
     }
 
     /**
-     * Devuelve la frase del lenguaje con 1 par√É¬°metros solicitada.
-     * @param a1 Primer par√É¬°metro.
+     * Devuelve la frase del lenguaje con 1 par·metros solicitada.
+     * @param a1 Primer par·metro.
      * @return Frase del lenguaje solicitada.
      */
     public String getFrase(int i,String a1) {
@@ -2490,9 +2490,9 @@ final public class Language {
     }
 
     /**
-     * Devuelve la frase del lenguaje con 2 par√É¬°metros solicitada.
-     * @param a1 Primer par√É¬°metro.
-     * @param a2 Segundo par√É¬°metro.
+     * Devuelve la frase del lenguaje con 2 par·metros solicitada.
+     * @param a1 Primer par·metro.
+     * @param a2 Segundo par·metro.
      * @return Frase del lenguaje solicitada.
      */
     public String getFrase(int i,String a1,String a2) {
@@ -2500,10 +2500,10 @@ final public class Language {
     }
 
     /**
-     * Devuelve la frase del lenguaje con 3 par√É¬°metros solicitada.
-     * @param a1 Primer par√É¬°metro.
-     * @param a2 Segundo par√É¬°metro.
-     * @param a3 Tercer par√É¬°metro.
+     * Devuelve la frase del lenguaje con 3 par·metros solicitada.
+     * @param a1 Primer par·metro.
+     * @param a2 Segundo par·metro.
+     * @param a3 Tercer par·metro.
      * @return Frase del lenguaje solicitada.
      */
     public String getFrase(int i,String a1,String a2,String a3) {
@@ -2511,11 +2511,11 @@ final public class Language {
     }
 
     /**
-     * Devuelve la frase del lenguaje con 4 par√É¬°metros solicitada.
-     * @param a1 Primer par√É¬°metro.
-     * @param a2 Segundo par√É¬°metro.
-     * @param a3 Tercer par√É¬°metro.
-     * @param a4 Cuarto par√É¬°metro.
+     * Devuelve la frase del lenguaje con 4 par·metros solicitada.
+     * @param a1 Primer par·metro.
+     * @param a2 Segundo par·metro.
+     * @param a3 Tercer par·metro.
+     * @param a4 Cuarto par·metro.
      * @return Frase del lenguaje solicitada.
      */
     public String getFrase(int i,String a1,String a2,String a3,String a4) {
@@ -2524,12 +2524,12 @@ final public class Language {
     }
 
     /**
-     * Devuelve la frase del lenguaje con 5 par√É¬°metros solicitada.
-     * @param a1 Primer par√É¬°metro.
-     * @param a2 Segundo par√É¬°metro.
-     * @param a3 Tercer par√É¬°metro.
-     * @param a4 Cuarto par√É¬°metro.
-     * @param a5 Quinto par√É¬°metro.
+     * Devuelve la frase del lenguaje con 5 par·metros solicitada.
+     * @param a1 Primer par·metro.
+     * @param a2 Segundo par·metro.
+     * @param a3 Tercer par·metro.
+     * @param a4 Cuarto par·metro.
+     * @param a5 Quinto par·metro.
      * @return Frase del lenguaje solicitada.
      */
     public String getFrase(int i,String a1,String a2,String a3,String a4,
@@ -2539,13 +2539,13 @@ final public class Language {
     }
 
     /**
-     * Devuelve la frase del lenguaje con 6 par√É¬°metros solicitada.
-     * @param a1 Primer par√É¬°metro.
-     * @param a2 Segundo par√É¬°metro.
-     * @param a3 Tercer par√É¬°metro.
-     * @param a4 Cuarto par√É¬°metro.
-     * @param a5 Quinto par√É¬°metro.
-     * @param a6 Sexto par√É¬°metro.
+     * Devuelve la frase del lenguaje con 6 par·metros solicitada.
+     * @param a1 Primer par·metro.
+     * @param a2 Segundo par·metro.
+     * @param a3 Tercer par·metro.
+     * @param a4 Cuarto par·metro.
+     * @param a5 Quinto par·metro.
+     * @param a6 Sexto par·metro.
      * @return Frase del lenguaje solicitada.
      */
     public String getFrase(int i,String a1,String a2,String a3,String a4,
@@ -2555,8 +2555,8 @@ final public class Language {
     }
 
     /**
-     * Devuelve el c√≥digo del idioma.
-     * @return C√≥digo del idioma.
+     * Devuelve el cÛdigo del idioma.
+     * @return CÛdigo del idioma.
      */
     public String getCodigo() {
         return s;

@@ -174,7 +174,7 @@ abstract public class JSimilCLI {
     };
 
     /**
-     * Comparador por similitud descendente y tama√±o.
+     * Comparador por similitud descendente y tamaÒo.
      */
     static final Comparator<ProgramComparison> compsimilsize =
       new Comparator<ProgramComparison>() {
@@ -215,7 +215,7 @@ abstract public class JSimilCLI {
     };
 
     /**
-     * Comparador por similitud ascendente y tama√±o.
+     * Comparador por similitud ascendente y tamaÒo.
      */
     static final Comparator<ProgramComparison> compdiffsize =
       new Comparator<ProgramComparison>() {
@@ -244,7 +244,7 @@ abstract public class JSimilCLI {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //Interpreto los par√°metros.
+        //Interpreto los par·metros.
         int i,j,k,n;
         DecimalFormatSymbols ds = new DecimalFormatSymbols();
         ds.setDecimalSeparator('.');

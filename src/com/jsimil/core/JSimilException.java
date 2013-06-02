@@ -7,7 +7,7 @@ package com.jsimil.core;
 import java.io.Serializable;
 
 /**
- * Excepci贸n lanzada por JSimil.
+ * Excepci髇 lanzada por JSimil.
  * @author elezeta
  */
 final public class JSimilException extends Exception implements Serializable {
@@ -18,15 +18,15 @@ final public class JSimilException extends Exception implements Serializable {
     private static final long serialVersionUID = JSimil.serialVersionUID;
     
     /**
-     * Tipo de excepci贸n.
+     * Tipo de excepci髇.
      */
     private ExceptionType tipo;
     
     /**
      * Constructor con cadena y tipo.
-     * Lanza una excepci贸n con el mensaje indicado y con el tipo indicado.
-     * @param tipo Tipo de excepci贸n.
-     * @param mensaje Cadena de excepci贸n.
+     * Lanza una excepci髇 con el mensaje indicado y con el tipo indicado.
+     * @param tipo Tipo de excepci髇.
+     * @param mensaje Cadena de excepci髇.
      * @.post Objeto inicializado.
      */
     protected JSimilException(ExceptionType tipo,String mensaje) {
@@ -35,8 +35,8 @@ final public class JSimilException extends Exception implements Serializable {
     }
     
     /**
-     * Devuelve el tipo de excepci贸n.
-     * @return Tipo de excepci贸n.
+     * Devuelve el tipo de excepci髇.
+     * @return Tipo de excepci髇.
      */
     public ExceptionType getTipo() {
         return tipo;

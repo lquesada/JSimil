@@ -22,7 +22,7 @@ import java.util.List;
 
 
 /**
- * BaterÃ­a de programas a comparar.
+ * Batería de programas a comparar.
  * @author elezeta
  */
 final public class ProgramBattery implements Serializable {
@@ -33,12 +33,12 @@ final public class ProgramBattery implements Serializable {
     private static final long serialVersionUID = JSimil.serialVersionUID;
     
     /**
-     * Ruta a la baterÃ­a de programas.
+     * Ruta a la batería de programas.
      */
     private String ruta;
     
     /**
-     * Programas contenidos en la baterÃ­a.
+     * Programas contenidos en la batería.
      */
     private List<Program> programas;
     
@@ -49,7 +49,7 @@ final public class ProgramBattery implements Serializable {
     
     /**
      * Constructor.
-     * @.post Objeto baterÃ­a inicializado.
+     * @.post Objeto batería inicializado.
      */
     public ProgramBattery() {
         ruta = "";
@@ -83,11 +83,11 @@ final public class ProgramBattery implements Serializable {
     
     /**
      * Cargar subelementos.
-     * @param config ConfiguraciÃ³n.
-     * @param nhebras NÃºmero de hebras a utilizar.
+     * @param config Configuración.
+     * @param nhebras Número de hebras a utilizar.
      * @.post Crea los objetos SFichero y los carga.
-     * @.post Crea los objetos SPrograma correspondientes a partir de la baterÃ­a.
-     * @.post AdemÃ¡s llama al mÃ©todo carga de cada uno de esos SPrograma.
+     * @.post Crea los objetos SPrograma correspondientes a partir de la batería.
+     * @.post Además llama al método carga de cada uno de esos SPrograma.
      * @exception JSimilException Error leyendo archivos.
      * @exception JSimilException No existen programas en esa ruta.
      */
@@ -106,12 +106,12 @@ final public class ProgramBattery implements Serializable {
             throw new JSimilException(
                       ExceptionType.NO_PROGRAMAS_A_COMPARAR,
                            "No existen programas legibles en esa ruta.");
-        event(EventType.BATERIA_CARGADA,"BaterÃ­a cargada.");
+        event(EventType.BATERIA_CARGADA,"Batería cargada.");
     }
     
     /**
      * Devolver lista de programas.
-     * @return Lista de programas incluidos en la baterÃ­a.
+     * @return Lista de programas incluidos en la batería.
      */
     List<Program> getProgramas() {
       return programas;    
@@ -120,15 +120,15 @@ final public class ProgramBattery implements Serializable {
     /**
      * Llevar a cabo el procesamiento.
      * @param perfil Perfil a utilizar.
-     * @param nhebras NÃºmero de hebras a utilizar.
+     * @param nhebras Número de hebras a utilizar.
      * @.post Resultados obtenidos y devueltos.
-     * @exception JSimilException SÃ³lo existe un programa a comparar.
+     * @exception JSimilException Sólo existe un programa a comparar.
      */
     ProgramComparisonList procesa(MatchingProfile perfil,int nhebras) throws JSimilException {
         if (programas.size() == 1 && perfil.getValorS("ReflexiveMATCH") <= 0.5)
             throw new JSimilException(
             ExceptionType.SOLO_UN_PROGRAMA_A_COMPARAR,
-                   "SÃ³lo existe un programa a comparar.");
+                   "Sólo existe un programa a comparar.");
         perfil.cargaat();
         ParallelProgramBatteryProcessor p = new ParallelProgramBatteryProcessor(programas,this,perfil);
         ProgramComparisonList ret = p.getResultados(nhebras);
@@ -139,7 +139,7 @@ final public class ProgramBattery implements Serializable {
      * Lanza un evento.
      * @param tipo Tipo del evento lanzado.
      * @param mensaje Mensaje del evento lanzado.
-     * @.post Se ha lanzado el evento en cuestiÃ³n.
+     * @.post Se ha lanzado el evento en cuestión.
      */
     void event(EventType tipo,String mensaje) {
         if (listener != null)
@@ -147,7 +147,7 @@ final public class ProgramBattery implements Serializable {
     }
   
     /**
-     * Asignar una ruta a la baterÃ­a.
+     * Asignar una ruta a la batería.
      * @param ruta Ruta a asignar.
      * @.post Ruta asignada a la instancia.
      */
@@ -158,7 +158,7 @@ final public class ProgramBattery implements Serializable {
     }
     
     /**
-     * Obtener la ruta asignada a la baterÃ­a.
+     * Obtener la ruta asignada a la batería.
      * @return Ruta asignada.
      */
     public String getRuta() {
@@ -166,8 +166,8 @@ final public class ProgramBattery implements Serializable {
     }
     
     /**
-     * Validar la baterÃ­a de programas.
-     * @exception JSimilException La ruta no es vÃ¡lida o accesible.
+     * Validar la batería de programas.
+     * @exception JSimilException La ruta no es válida o accesible.
      * @exception JSimilException No existen programas en esa ruta.
      */
     public void validate() throws JSimilException {
@@ -176,18 +176,18 @@ final public class ProgramBattery implements Serializable {
             if (!f.exists()) {
                 throw new JSimilException(
                           ExceptionType.RUTA_NO_VALIDA_O_INACCESIBLE,
-                               "Ruta no vÃ¡lida o inaccesible.");
+                               "Ruta no válida o inaccesible.");
             }
             if (!f.isDirectory()) {
                 throw new JSimilException(
                           ExceptionType.RUTA_NO_VALIDA_O_INACCESIBLE,
-                               "Ruta no vÃ¡lida o inaccesible.");
+                               "Ruta no válida o inaccesible.");
             }
             String contenido[] = f.list();
             if (contenido == null) {
                 throw new JSimilException(
                           ExceptionType.RUTA_NO_VALIDA_O_INACCESIBLE,
-                               "Ruta no vÃ¡lida o inaccesible.");
+                               "Ruta no válida o inaccesible.");
             }
 
             int i;
@@ -206,10 +206,10 @@ final public class ProgramBattery implements Serializable {
     }
     
     /**
-     * Cargar la configuraciÃ³n de la baterÃ­a desde un fichero.
-     * @param ruta Ruta desde la que leer la baterÃ­a.
-     * @.post ConfiguraciÃ³n cargada desde un fichero.
-     * @exception JSimilException La ruta no es vÃ¡lida o accesible.
+     * Cargar la configuración de la batería desde un fichero.
+     * @param ruta Ruta desde la que leer la batería.
+     * @.post Configuración cargada desde un fichero.
+     * @exception JSimilException La ruta no es válida o accesible.
      * @exception JSimilException Formato incorrecto.
      */
     public void load(String ruta) throws JSimilException {
@@ -223,7 +223,7 @@ final public class ProgramBattery implements Serializable {
         catch (FileNotFoundException e) {
             fis = null;
             throw new JSimilException(ExceptionType.RUTA_NO_VALIDA_O_INACCESIBLE,
-                               "Ruta no vÃ¡lida o inaccesible.");    
+                               "Ruta no válida o inaccesible.");    
         }
         BufferedReader ds = null;
         
@@ -281,10 +281,10 @@ final public class ProgramBattery implements Serializable {
     }
     
     /**
-     * Guardar la configuraciÃ³n de la baterÃ­a a un fichero.
-     * @param ruta Ruta a la que escribir la baterÃ­a.
-     * @.post ConfiguraciÃ³n escrita a un fichero.
-     * @exception JSimilException La ruta no es vÃ¡lida o accesible.
+     * Guardar la configuración de la batería a un fichero.
+     * @param ruta Ruta a la que escribir la batería.
+     * @.post Configuración escrita a un fichero.
+     * @exception JSimilException La ruta no es válida o accesible.
      * @exception JSimilException Error escribiendo el fichero.
      */
     public void save(String ruta) throws JSimilException {
@@ -293,11 +293,11 @@ final public class ProgramBattery implements Serializable {
 
         if (ruta == null) {
             throw new JSimilException(ExceptionType.RUTA_NO_VALIDA_O_INACCESIBLE,
-                                 "Ruta no vÃ¡lida o inaccesible.");    
+                                 "Ruta no válida o inaccesible.");    
         }
         else if (ruta.equals("")) {
             throw new JSimilException(ExceptionType.RUTA_NO_VALIDA_O_INACCESIBLE,
-                                 "Ruta no vÃ¡lida o inaccesible.");                  
+                                 "Ruta no válida o inaccesible.");                  
         }
         
         try {
@@ -331,10 +331,10 @@ final public class ProgramBattery implements Serializable {
     }
     
     /**
-     * Exportar la la baterÃ­a a un fichero.
-     * @param ruta Ruta a la que escribir la baterÃ­a.
-     * @.post BaterÃ­a escrita a un fichero.
-     * @exception JSimilException La ruta no es vÃ¡lida o accesible.
+     * Exportar la la batería a un fichero.
+     * @param ruta Ruta a la que escribir la batería.
+     * @.post Batería escrita a un fichero.
+     * @exception JSimilException La ruta no es válida o accesible.
      * @exception JSimilException Error escribiendo el fichero.
      */
     public void dump(String ruta) throws JSimilException {
@@ -343,11 +343,11 @@ final public class ProgramBattery implements Serializable {
         
         if (ruta == null) {
             throw new JSimilException(ExceptionType.RUTA_NO_VALIDA_O_INACCESIBLE,
-                                 "Ruta no vÃ¡lida o inaccesible.");    
+                                 "Ruta no válida o inaccesible.");    
         }
         else if (ruta.equals("")) {
             throw new JSimilException(ExceptionType.RUTA_NO_VALIDA_O_INACCESIBLE,
-                                 "Ruta no vÃ¡lida o inaccesible.");                  
+                                 "Ruta no válida o inaccesible.");                  
         }
         
         try {
@@ -415,7 +415,7 @@ final public class ProgramBattery implements Serializable {
      * @param prog Programa a cambiar el estado.
      * @param val Nuevo estado del programa.
      * @.post Estado del programa cambiado.
-     * @exception JSimilException No existe ese programa en esta baterÃ­a.
+     * @exception JSimilException No existe ese programa en esta batería.
      */
     public void setEstado(String prog,boolean val) throws JSimilException {
         int i;
@@ -426,7 +426,7 @@ final public class ProgramBattery implements Serializable {
             }
         }
         throw new JSimilException(ExceptionType.PROGRAMA_NO_ENCONTRADO_EN_BATERIA,
-                "No existe ese programa en esta baterÃ­a");
+                "No existe ese programa en esta batería");
     }
     
     /**

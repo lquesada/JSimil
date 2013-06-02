@@ -15,7 +15,7 @@ import java.io.InputStreamReader;
 import java.io.Serializable;
 
 /**
- * Configuraci√≥n de rutas a programas utilizados.
+ * ConfiguraciÛn de rutas a programas utilizados.
  * @author elezeta
  */
 final public class Configuration implements Serializable {
@@ -41,7 +41,7 @@ final public class Configuration implements Serializable {
     private boolean compilar;
     
     /**
-     * Si se deben aceptar los c√≥digos ya compilados.
+     * Si se deben aceptar los cÛdigos ya compilados.
      */
     private boolean aceptaComp;
 
@@ -51,7 +51,7 @@ final public class Configuration implements Serializable {
     private boolean descartaErr;
 
     /**
-     * Codificaci√≥n de los ficheros fuente.
+     * CodificaciÛn de los ficheros fuente.
      */
     private String encoding;
 
@@ -109,9 +109,9 @@ final public class Configuration implements Serializable {
     }
     
     /**
-     * Validar la configuraci√≥n.
-     * @exception JSimilException La ruta del compilador no es v√°lida o accesible.
-     * @exception JSimilException Ruta del desensamblador no es v√°lida o accesible.
+     * Validar la configuraciÛn.
+     * @exception JSimilException La ruta del compilador no es v·lida o accesible.
+     * @exception JSimilException Ruta del desensamblador no es v·lida o accesible.
      * @exception JSimilException Compilador no ejecutable.
      * @exception JSimilException Desensamblador no ejecutable.
      */
@@ -120,7 +120,7 @@ final public class Configuration implements Serializable {
         if (!f.exists()) {
             throw new JSimilException(
                       ExceptionType.RUTA_DEL_COMPILADOR_NO_VALIDA_O_INACCESIBLE,
-                           "Ruta del compilador no v√°lida o inaccesible.");
+                           "Ruta del compilador no v·lida o inaccesible.");
         }
 
         try {
@@ -143,7 +143,7 @@ final public class Configuration implements Serializable {
         if (!f2.exists()) {
             throw new JSimilException(
                   ExceptionType.RUTA_DEL_DESENSAMBLADOR_NO_VALIDA_O_INACCESIBLE,
-                            "Ruta del desensamblador no v√°lida o inaccesible.");
+                            "Ruta del desensamblador no v·lida o inaccesible.");
         }
         try {
           try {
@@ -163,9 +163,9 @@ final public class Configuration implements Serializable {
     }
 
     /**
-     * Obtener la versi√≥n de los programas utilizados.
+     * Obtener la versiÛn de los programas utilizados.
      * @return Versiones de los programas utilizados.
-     * @exception JSimilException Error lanzando compilador para obtener la versi√≥n.
+     * @exception JSimilException Error lanzando compilador para obtener la versiÛn.
      */
     public String getVersion() throws JSimilException {
         String vers;
@@ -178,12 +178,12 @@ final public class Configuration implements Serializable {
             if (linea == null) {
                 throw new JSimilException(
                            ExceptionType.ERROR_LANZANDO_COMPILADOR_PARA_VERSION,
-                           "Error lanzando compilador para versi√≥n.");
+                           "Error lanzando compilador para versiÛn.");
             }
             if (!linea.startsWith("javac")) {
                 throw new JSimilException(
                            ExceptionType.ERROR_LANZANDO_COMPILADOR_PARA_VERSION,
-                           "Error lanzando compilador para versi√≥n.");
+                           "Error lanzando compilador para versiÛn.");
             }
             vers = linea.substring("javac ".length());
             try {
@@ -194,22 +194,22 @@ final public class Configuration implements Serializable {
             } catch (InterruptedException e) {
               throw new JSimilException(
                            ExceptionType.ERROR_LANZANDO_COMPILADOR_PARA_VERSION,
-                             "Error lanzando compilador para versi√≥n.");
+                             "Error lanzando compilador para versiÛn.");
             }
           } catch (IOException e) {
               throw new JSimilException(
                            ExceptionType.ERROR_LANZANDO_COMPILADOR_PARA_VERSION,
-                             "Error lanzando compilador para versi√≥n.");
+                             "Error lanzando compilador para versiÛn.");
           }
                 
         return vers;
     }
 
     /**
-     * Cargar la configuraci√≥n desde un fichero.
-     * @param ruta Ruta desde la que leer la configuraci√≥n.
-     * @.post Configuraci√≥n cargada desde un fichero.
-     * @exception JSimilException La ruta no es v√°lida o accesible.
+     * Cargar la configuraciÛn desde un fichero.
+     * @param ruta Ruta desde la que leer la configuraciÛn.
+     * @.post ConfiguraciÛn cargada desde un fichero.
+     * @exception JSimilException La ruta no es v·lida o accesible.
      * @exception JSimilException Formato incorrecto.
      */
     public void load(String ruta) throws JSimilException {
@@ -224,7 +224,7 @@ final public class Configuration implements Serializable {
         catch (FileNotFoundException e) {
             fr = null;
             throw new JSimilException(ExceptionType.RUTA_NO_VALIDA_O_INACCESIBLE,
-                               "Ruta no v√°lida o inaccesible.");    
+                               "Ruta no v·lida o inaccesible.");    
         }
         in = new BufferedReader(fr);
         
@@ -337,15 +337,15 @@ final public class Configuration implements Serializable {
             rutaCompilador = "";
             rutaDesensamblador = ""; 
             throw new JSimilException(ExceptionType.RUTA_NO_VALIDA_O_INACCESIBLE,
-                                 "Ruta no v√°lida o inaccesible.");
+                                 "Ruta no v·lida o inaccesible.");
         } 
     }
 
     /**
-     * Guardar la configuraci√≥n a un fichero.
-     * @param ruta Ruta a la que escribir la configuraci√≥n.
-     * @.post Configuraci√≥n escrita a un fichero.
-     * @exception JSimilException La ruta no es v√°lida o accesible.
+     * Guardar la configuraciÛn a un fichero.
+     * @param ruta Ruta a la que escribir la configuraciÛn.
+     * @.post ConfiguraciÛn escrita a un fichero.
+     * @exception JSimilException La ruta no es v·lida o accesible.
      * @exception JSimilException Error escribiendo el fichero.
      */
     public void save(String ruta) throws JSimilException {
@@ -354,11 +354,11 @@ final public class Configuration implements Serializable {
 
         if (ruta == null) {
             throw new JSimilException(ExceptionType.RUTA_NO_VALIDA_O_INACCESIBLE,
-                                 "Ruta no v√°lida o inaccesible.");    
+                                 "Ruta no v·lida o inaccesible.");    
         }
         else if (ruta.equals("")) {
             throw new JSimilException(ExceptionType.RUTA_NO_VALIDA_O_INACCESIBLE,
-                                 "Ruta no v√°lida o inaccesible.");                  
+                                 "Ruta no v·lida o inaccesible.");                  
         }
         
         try {
@@ -416,8 +416,8 @@ final public class Configuration implements Serializable {
     }    
     
     /**
-     * Realiza una configuraci√≥n autom√°tica.
-     * @.post Configuraci√≥n autom√°tica realizada.
+     * Realiza una configuraciÛn autom·tica.
+     * @.post ConfiguraciÛn autom·tica realizada.
      * @exception JSimilException Imposible autoconfigurar.
      */
     public void autoConfig() throws JSimilException {
@@ -474,8 +474,8 @@ final public class Configuration implements Serializable {
     }
 
     /**
-     * Obtiene si se deben aceptar los c√≥digos compilados o no.
-     * @return true si s√≠, false si no.
+     * Obtiene si se deben aceptar los cÛdigos compilados o no.
+     * @return true si sÌ, false si no.
      */
     public boolean getAceptaComp() {
         return aceptaComp;
@@ -483,7 +483,7 @@ final public class Configuration implements Serializable {
 
     /**
      * Obtiene si se deben descartar los programas con errores.
-     * @return true si s√≠, false si no.
+     * @return true si sÌ, false si no.
      */
     public boolean getDescartaErrores() {
         return descartaErr;
@@ -491,14 +491,14 @@ final public class Configuration implements Serializable {
     
     /**
      * Obtiene si se deben compilar o no los programas.
-     * @return true si s√≠, false si no.
+     * @return true si sÌ, false si no.
      */
     public boolean getCompilar() {
         return compilar;
     }
 
     /**
-     * Cambia si se deben aceptar los c√≥digos compilados o no.
+     * Cambia si se deben aceptar los cÛdigos compilados o no.
      * @param val Nuevo valor.
      * @.post Valor cambiado.
      */
@@ -516,7 +516,7 @@ final public class Configuration implements Serializable {
     }
     
     /**
-     * Cambia la opci√≥n de compilaci√≥n de los programas.
+     * Cambia la opciÛn de compilaciÛn de los programas.
      * @param val Nuevo valor.
      * @.post Valor cambiado.
      */
@@ -525,7 +525,7 @@ final public class Configuration implements Serializable {
     }
 
     /**
-     * Cambia la codificaci√≥n de los ficheros fuente.
+     * Cambia la codificaciÛn de los ficheros fuente.
      * @param val Nuevo valor.
      * @.post Valor cambiado.
      */
@@ -534,8 +534,8 @@ final public class Configuration implements Serializable {
     }
 
     /**
-     * Devuelve la codificaci√≥n de los ficheros fuente.
-     * @return codificaci√≥n de los ficheros fuente.
+     * Devuelve la codificaciÛn de los ficheros fuente.
+     * @return codificaciÛn de los ficheros fuente.
      */
     public String getEncoding() {
         return encoding;

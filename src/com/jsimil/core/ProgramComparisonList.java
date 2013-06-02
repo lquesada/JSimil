@@ -21,7 +21,7 @@ final public class ProgramComparisonList implements Serializable {
     private static final long serialVersionUID = JSimil.serialVersionUID;
         
     /**
-     * Lista de resultados de comparar programas entre sÃ­.
+     * Lista de resultados de comparar programas entre sí.
      */
     List<ProgramComparison> resultados;
     
@@ -40,12 +40,12 @@ final public class ProgramComparisonList implements Serializable {
     }
     
     /**
-     * Devuelve la comparaciÃ³n de dos programas.
+     * Devuelve la comparación de dos programas.
      * @param nombre1 Nombre del primer programa.
      * @param nombre2 Nombre del segundo programa.
-     * @return ComparaciÃ³n entre ambos programas.
+     * @return Comparación entre ambos programas.
      * @exception JSimilException No se puede comparar un programa consigo mismo.
-     * @exception JSimilException No existe la comparaciÃ³n indicada.
+     * @exception JSimilException No existe la comparación indicada.
      */
     public ProgramComparison getResultado(String nombre1,String nombre2)
             throws JSimilException {
@@ -61,12 +61,12 @@ final public class ProgramComparisonList implements Serializable {
             }
         }
         throw new JSimilException(ExceptionType.NO_EXISTE_COMPARACION_INDICADA,
-                    "No existe la comparaciÃ³n indicada");
+                    "No existe la comparación indicada");
     }
     
     /**
      * Devuelve la lista completa de comparaciones.
-     * @return ComparaciÃ³n entre todos los programas.
+     * @return Comparación entre todos los programas.
      */
     public List<ProgramComparison> getResultados() {
         return Collections.unmodifiableList(resultados);

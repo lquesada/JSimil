@@ -29,7 +29,7 @@ public abstract class MatchableElement implements Serializable {
     private String nombre;
     
     /**
-     * NÃºmero de instrucciones que posÃ©e el elemento.
+     * Número de instrucciones que posée el elemento.
      */
     private int nInstrucciones;
         
@@ -84,9 +84,9 @@ public abstract class MatchableElement implements Serializable {
     abstract MatchableElement getPadre();
         
     /**
-     * Cambia el nÃºmero de instrucciones del elemento.
-     * @param val Nuevo nÃºmero de instrucciones.
-     * @.post NÃºmero de instrucciones del elemento modificado.
+     * Cambia el número de instrucciones del elemento.
+     * @param val Nuevo número de instrucciones.
+     * @.post Número de instrucciones del elemento modificado.
      */
     void setNInstrucciones(int val) {
         nInstrucciones = val;
@@ -117,8 +117,8 @@ public abstract class MatchableElement implements Serializable {
     }
     
     /**
-     * Devuelve el nÃºmero de instrucciones del elemento.
-     * @return NÃºmero de instrucciones del elemento.
+     * Devuelve el número de instrucciones del elemento.
+     * @return Número de instrucciones del elemento.
      */
     public int getNInstrucciones() {
         return nInstrucciones;

@@ -7,13 +7,13 @@ package com.jsimil.export;
 import java.util.StringTokenizer;
 
 /**
- * Clase auxiliar de m√©todos est√°ticos.
+ * Clase auxiliar de mÈtodos est·ticos.
  * @author elezeta
  */
 abstract class Tools {
 
     /**
-     * Codifica caracteres extra√±os a xml.
+     * Codifica caracteres extraÒos a xml.
      * @param re Cadena a codificar.
      * @return Cadena codificada.
      */
@@ -31,25 +31,25 @@ abstract class Tools {
     }
     
     /**
-     * Codifica caracteres extra√±os a html.
+     * Codifica caracteres extraÒos a html.
      * @param re Cadena a codificar.
      * @return Cadena codificada.
      */
     static String codifica(String re) {
         re = re.replace("&","&amp;");
         re = re.replace(" ","&nbsp;");
-        re = re.replace("√°","&aacute;");
-        re = re.replace("√©","&eacute;");
-        re = re.replace("√≠","&iacute;");
-        re = re.replace("√≥","&oacute;");
-        re = re.replace("√∫","&uacute;");
-        re = re.replace("√Å","&Aacute;");
-        re = re.replace("√â","&Eacute;");
-        re = re.replace("√ç","&Iacute;");
-        re = re.replace("√ì","&Oacute;");
-        re = re.replace("√ö","&Uacute;");
-        re = re.replace("√±","&ntilde;");
-        re = re.replace("√ë","&Ntilde;");
+        re = re.replace("·","&aacute;");
+        re = re.replace("È","&eacute;");
+        re = re.replace("Ì","&iacute;");
+        re = re.replace("Û","&oacute;");
+        re = re.replace("˙","&uacute;");
+        re = re.replace("¡","&Aacute;");
+        re = re.replace("…","&Eacute;");
+        re = re.replace("Õ","&Iacute;");
+        re = re.replace("”","&Oacute;");
+        re = re.replace("⁄","&Uacute;");
+        re = re.replace("Ò","&ntilde;");
+        re = re.replace("—","&Ntilde;");
         re = re.replace("<","&lt;");
         re = re.replace(">","&gt;");
         re = re.replace("\"","&quot;");
@@ -62,7 +62,7 @@ abstract class Tools {
     }
 
     /**
-     * Codifica caracteres extra√±os a html y mete wordwrap.
+     * Codifica caracteres extraÒos a html y mete wordwrap.
      * @param re Cadena a codificar.
      * @return Cadena codificada.
      */
@@ -83,18 +83,18 @@ abstract class Tools {
         } 
         rea = rea.replace("&","&amp;");
         rea = rea.replace(" ","&nbsp;");
-        rea = rea.replace("√°","&aacute;");
-        rea = rea.replace("√©","&eacute;");
-        rea = rea.replace("√≠","&iacute;");
-        rea = rea.replace("√≥","&oacute;");
-        rea = rea.replace("√∫","&uacute;");
-        rea = rea.replace("√Å","&Aacute;");
-        rea = rea.replace("√â","&Eacute;");
-        rea = rea.replace("√ç","&Iacute;");
-        rea = rea.replace("√ì","&Oacute;");
-        rea = rea.replace("√ö","&Uacute;");
-        rea = rea.replace("√±","&ntilde;");
-        rea = rea.replace("√ë","&Ntilde;");
+        rea = rea.replace("·","&aacute;");
+        rea = rea.replace("È","&eacute;");
+        rea = rea.replace("Ì","&iacute;");
+        rea = rea.replace("Û","&oacute;");
+        rea = rea.replace("˙","&uacute;");
+        rea = rea.replace("¡","&Aacute;");
+        rea = rea.replace("…","&Eacute;");
+        rea = rea.replace("Õ","&Iacute;");
+        rea = rea.replace("”","&Oacute;");
+        rea = rea.replace("⁄","&Uacute;");
+        rea = rea.replace("Ò","&ntilde;");
+        rea = rea.replace("—","&Ntilde;");
         rea = rea.replace("<","&lt;");
         rea = rea.replace(">","&gt;");
         rea = rea.replace("\"","&quot;");

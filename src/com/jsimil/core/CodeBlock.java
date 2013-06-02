@@ -9,7 +9,7 @@ import java.util.List;
 
 
 /**
- * Bloque b√°sico de c√≥digo de un programa a comparar.
+ * Bloque b·sico de cÛdigo de un programa a comparar.
  * @author elezeta
  */
 final class CodeBlock extends CodeElement implements Serializable {
@@ -20,7 +20,7 @@ final class CodeBlock extends CodeElement implements Serializable {
     private static final long serialVersionUID = JSimil.serialVersionUID;
     
     /**
-     * M√©todo que contiene al bloque.
+     * MÈtodo que contiene al bloque.
      */
     private CodeMethod metodo;
     
@@ -75,18 +75,18 @@ final class CodeBlock extends CodeElement implements Serializable {
      */
     
     /**
-     * Si el bloque est√° o no cargado en memoria
+     * Si el bloque est· o no cargado en memoria
      */
     boolean cargado;
     
     /**
      * Constructor.
      * @param programa Programa que contiene al bloque.
-     * @param codigoOriginal Lugar del c√≥digo original (null si no disponible).
-     * @param codigoDesensamblado Lugar del c√≥digo desensamblado.
+     * @param codigoOriginal Lugar del cÛdigo original (null si no disponible).
+     * @param codigoDesensamblado Lugar del cÛdigo desensamblado.
      * @param nombre Nombre del bloque.
      * @param id Id del bloque.
-     * @param metodo M√©todo que contiene al bloque.
+     * @param metodo MÈtodo que contiene al bloque.
      * @.post Objeto bloque inicializado.
      */
     protected CodeBlock(Program programa,Location codigoOriginal,
@@ -103,8 +103,8 @@ final class CodeBlock extends CodeElement implements Serializable {
     }
     
     /**
-     * Devuelve el m√©todo que contiene al bloque.
-     * @return M√©todo que contiene al bloque.
+     * Devuelve el mÈtodo que contiene al bloque.
+     * @return MÈtodo que contiene al bloque.
      */
     CodeMethod getMetodo() {
         return metodo;
@@ -112,7 +112,7 @@ final class CodeBlock extends CodeElement implements Serializable {
     
     /**
      * Cargar subelementos.
-     * @.post Cuenta el n√∫mero de instrucciones del bloque.
+     * @.post Cuenta el n˙mero de instrucciones del bloque.
      */
     void carga() {
         

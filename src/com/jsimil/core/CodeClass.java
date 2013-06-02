@@ -22,15 +22,15 @@ final class CodeClass extends CodeElement implements Serializable {
     private static final long serialVersionUID = JSimil.serialVersionUID;
     
     /**
-     * M茅todos contenidos en la clase.
+     * M閠odos contenidos en la clase.
      */
     private List<CodeMethod> metodos;
     
     /**
      * Constructor.
      * @param programa Programa que contiene a la clase.
-     * @param codigoOriginal Lugar del c贸digo original (null si no disponible).
-     * @param codigoDesensamblado Lugar del c贸digo desensamblado.
+     * @param codigoOriginal Lugar del c骴igo original (null si no disponible).
+     * @param codigoDesensamblado Lugar del c骴igo desensamblado.
      * @param nombre Nombre de la clase.
      * @param id Id de la clase.
      * @.post Objeto clase inicializado.
@@ -43,8 +43,8 @@ final class CodeClass extends CodeElement implements Serializable {
     }
 
     /**
-     * Devuelve los m茅todos contenidos.
-     * @return Vector de m茅todos contenidos.
+     * Devuelve los m閠odos contenidos.
+     * @return Vector de m閠odos contenidos.
      */
     List<CodeMethod> getMetodos() {
         return metodos;
@@ -53,8 +53,8 @@ final class CodeClass extends CodeElement implements Serializable {
     /**
      * Cargar subelementos.
      * @.post Crea los objetos SMetodo correspondientes a partir de la clase.
-     * @.post Llama a los m茅todos carga de estos subelementos.
-     * @.post A帽ade los m茅todos encontrados al programa.
+     * @.post Llama a los m閠odos carga de estos subelementos.
+     * @.post A馻de los m閠odos encontrados al programa.
      */
     void carga() {
         
@@ -214,13 +214,13 @@ final class CodeClass extends CodeElement implements Serializable {
             }
         }
 
-        //Encontrar los m茅todos que contiene.
-        //Para cada m茅todo: {
-        //  Obtener el nombre con par谩metros del m茅todo.
-        //  Crear los lugares en cuesti贸n.
+        //Encontrar los m閠odos que contiene.
+        //Para cada m閠odo: {
+        //  Obtener el nombre con par醡etros del m閠odo.
+        //  Crear los lugares en cuesti髇.
         //  Generar la ID.
-        //  Delimitar el c贸digo desensamblado incluyendo excepciones y lineas.
-        //  Obtener del c贸digo desensamblado las lineas del c贸digo original.
+        //  Delimitar el c骴igo desensamblado incluyendo excepciones y lineas.
+        //  Obtener del c骴igo desensamblado las lineas del c骴igo original.
         //  Crear un SMetodo.
         //  Lanzar carga del SMetodo.
         //}

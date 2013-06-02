@@ -11,7 +11,7 @@ import com.jsimil.languages.Language;
 
 
 /**
- * Escuchador de eventos de baterÃ­a.
+ * Escuchador de eventos de batería.
  * @author elezeta
  */
 public class DefaultJSimilEventListener implements JSimilEventListener {

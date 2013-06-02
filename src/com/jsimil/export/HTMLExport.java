@@ -104,10 +104,10 @@ abstract public class HTMLExport {
     }
     
     /**
-     * Escribe la cabecera de una p√°gina HTML.
+     * Escribe la cabecera de una p·gina HTML.
      * @param out BufferedWriter de salida.
-     * @param back Ruta a la p√°gina anterior.
-     * @param index Ruta al √≠ndice.
+     * @param back Ruta a la p·gina anterior.
+     * @param index Ruta al Ìndice.
      * @param css Ruta al css.
      * @param logo Ruta al logo.
      * @param icon Ruta al icono.
@@ -185,13 +185,13 @@ abstract public class HTMLExport {
     }
 
     /**
-     * Escribe el pie de una p√°gina HTML.
+     * Escribe el pie de una p·gina HTML.
      * @param out BufferedWriter de salida.
-     * @param back Ruta a la p√°gina anterior.
-     * @param index Ruta al √≠ndice.
+     * @param back Ruta a la p·gina anterior.
+     * @param index Ruta al Ìndice.
      * @param lang Idioma.
      * @param js Instancia de JSimil.
-     * @.post Pie de p√°gina escrito.
+     * @.post Pie de p·gina escrito.
      * @exception IOException Error escribiendo.
      */
     static private void footerHTML(BufferedWriter out,String back,String index,
@@ -250,8 +250,8 @@ abstract public class HTMLExport {
      * @param rutaglobal Ruta global principal.
      * @param dir Directorio para este emparejamiento.
      * @param miruta Mi ruta.
-     * @param back Ruta hacia atr√°s.
-     * @param index Ruta al √≠ndice.
+     * @param back Ruta hacia atr·s.
+     * @param index Ruta al Ìndice.
      * @param css Ruta al css.
      * @param logo Ruta al logo.
      * @param icono Ruta al icono.
@@ -261,7 +261,7 @@ abstract public class HTMLExport {
      * @param a Elemento 1.
      * @param b Elemento 2.
      * @param s Coincidencias a escribir.
-     * @param ini Posici√≥n inicial a escribir.
+     * @param ini PosiciÛn inicial a escribir.
      * @param prof Profundidad a escribir. 
      * @param resume Cantidad de resumen a realizar.
      * @param simil Similitud del emparejamiento.
@@ -341,8 +341,8 @@ abstract public class HTMLExport {
      * @param dir Directorio para este emparejamiento.
      * @param miruta Mi ruta.
      * @param miruta2 Mi ruta (paquetes).
-     * @param back Ruta hacia atr√°s.
-     * @param index Ruta al √≠ndice.
+     * @param back Ruta hacia atr·s.
+     * @param index Ruta al Ìndice.
      * @param css Ruta al css.
      * @param logo Ruta al logo.
      * @param icono Ruta al icono.
@@ -404,7 +404,7 @@ abstract public class HTMLExport {
         escribeSubElementosPac(out,rutaglobal,dir,miruta,rutaglobal+dir+miruta,
                 index,css,logo,icono,0,0,resume,lang,df,js,true,r); 
         //Mostrar lista de paquetes de ambos y el [sin nombre].
-            //Mostrar opci√≥n para ver el fichero normal.
+            //Mostrar opciÛn para ver el fichero normal.
             //Mostrar recursivamente los emparejamientos por paquetes.
             //Mostrar la suma de similitud por paquetes.
         footerHTML(out, back, index, lang, js);
@@ -464,17 +464,17 @@ abstract public class HTMLExport {
     }
 
     /**
-     * Escribe un fichero de c√≥digo.
+     * Escribe un fichero de cÛdigo.
      * @param ruta Ruta donde escribir el fichero.
      * @param a Elemento 1.
      * @param b Elemento 2.
-     * @param back Enlace para regresar atr√°s.
-     * @param index Enlace para regresar al √≠ndice.
+     * @param back Enlace para regresar atr·s.
+     * @param index Enlace para regresar al Ìndice.
      * @param css Enlace al css.
      * @param logo Enlace al logo.
      * @param icono Enlace al icono.
      * @param si Coincidencias.
-     * @param num N√∫mero de coincidencia a mostrar.
+     * @param num N˙mero de coincidencia a mostrar.
      * @param lang Idioma a utilizar.
      * @param df DecimalFormat a utilizar.
      * @param js Instancia JSimil a utilizar.
@@ -916,19 +916,19 @@ abstract public class HTMLExport {
      * @param rutaglobal Ruta global principal.
      * @param dir Directorio para este emparejamiento.
      * @param miruta Mi ruta.
-     * @param back Ruta hacia atr√°s.
-     * @param index Ruta al √≠ndice.
+     * @param back Ruta hacia atr·s.
+     * @param index Ruta al Ìndice.
      * @param css Ruta al css.
      * @param logo Ruta al logo.
      * @param icono Ruta al icono.
      * @param s Lista de coincidencias a escribir.
-     * @param ini √çndice inicial a escribir.
+     * @param ini Õndice inicial a escribir.
      * @param prof Profundidad a escribir.
      * @param resume Cantidad de resumen a realizar.
      * @param lang Idioma a utilizar.
      * @param df DecimalFormat a utilizar.
      * @param js Instancia JSimil a utilizar.
-     * @param showclass Mostrar clase en m√©todos.
+     * @param showclass Mostrar clase en mÈtodos.
      * @exception IOException Error escribiendo.
      * @.post Resultados escritos.
      */
@@ -1264,18 +1264,18 @@ abstract public class HTMLExport {
      * @param rutaglobal Ruta global principal.
      * @param dir Directorio para este emparejamiento.
      * @param miruta Mi ruta.
-     * @param back Ruta hacia atr√°s.
-     * @param index Ruta al √≠ndice.
+     * @param back Ruta hacia atr·s.
+     * @param index Ruta al Ìndice.
      * @param css Ruta al css.
      * @param logo Ruta al logo.
      * @param icono Ruta al icono.
-     * @param ini √çndice inicial a escribir.
+     * @param ini Õndice inicial a escribir.
      * @param prof Profundidad a escribir.
      * @param resume Cantidad de resumen a realizar.
      * @param lang Idioma a utilizar.
      * @param df DecimalFormat a utilizar.
      * @param js Instancia JSimil a utilizar.
-     * @param showclass Mostrar clase en m√©todos.
+     * @param showclass Mostrar clase en mÈtodos.
      * @param r Resultado a escribir.
      * @exception IOException Error escribiendo.
      * @.post Resultados escritos.
@@ -1481,7 +1481,7 @@ abstract public class HTMLExport {
      * @param per Perfil a utilizar.
      * @param lang Idioma a utilizar.
      * @param resume 0 = completo, 1 = resumen, 2 = resumen corto.
-     * @param limite L√≠mite de resultados a exportar, si -1 no hay l√≠mite.
+     * @param limite LÌmite de resultados a exportar, si -1 no hay lÌmite.
      * @.post Escrito fichero.
      * @exception IOException No se puede crear el fichero.
      */

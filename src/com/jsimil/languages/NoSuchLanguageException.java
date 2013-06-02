@@ -5,7 +5,7 @@
 package com.jsimil.languages;
 
 /**
- * ExcepciÃ³n de idioma inexistente.
+ * Excepción de idioma inexistente.
  * @author elezeta
  */
 public class NoSuchLanguageException extends Exception {
@@ -17,8 +17,8 @@ public class NoSuchLanguageException extends Exception {
 
     /**
      * Constructor con cadena.
-     * Lanza una excepciÃ³n con el mensaje indicado.
-     * @param mensaje Cadena de excepciÃ³n.
+     * Lanza una excepción con el mensaje indicado.
+     * @param mensaje Cadena de excepción.
      */
     NoSuchLanguageException(String mensaje) {
         super(mensaje);

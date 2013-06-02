@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 
 /**
- * Elemento localizable en un fichero o porci√≥n del mismo.
+ * Elemento localizable en un fichero o porciÛn del mismo.
  * @author elezeta
  */
 public abstract class CodeElement extends MatchableElement
@@ -20,12 +20,12 @@ public abstract class CodeElement extends MatchableElement
     private static final long serialVersionUID = JSimil.serialVersionUID;
     
     /**
-     * Descriptor del lugar en el que est√° el c√≥digo original.
+     * Descriptor del lugar en el que est· el cÛdigo original.
      */
     private Location lugarCodigoOriginal;
     
     /**
-     * Descriptor del lugar en el que est√° el c√≥digo desensamblado.
+     * Descriptor del lugar en el que est· el cÛdigo desensamblado.
      */
     private Location lugarCodigoDesensamblado;
     
@@ -47,8 +47,8 @@ public abstract class CodeElement extends MatchableElement
     /**
      * Constructor.
      * @param programa Programa que contiene al elemento.
-     * @param codigoOriginal Lugar del c√≥digo original (null si no disponible).
-     * @param codigoDesensamblado Lugar del c√≥digo desensamblado.
+     * @param codigoOriginal Lugar del cÛdigo original (null si no disponible).
+     * @param codigoDesensamblado Lugar del cÛdigo desensamblado.
      * @param nombre Nombre del elemento.
      * @param id Id del elemento.
      * @.post Objeto elemento inicializado.
@@ -98,16 +98,16 @@ public abstract class CodeElement extends MatchableElement
     }
     
     /**
-     * Devuelve la localizaci√≥n del c√≥digo original.
-     * @return Localizaci√≥n del c√≥digo original.
+     * Devuelve la localizaciÛn del cÛdigo original.
+     * @return LocalizaciÛn del cÛdigo original.
      */
     public Location getLugarCodigoOriginal() {
         return lugarCodigoOriginal;
     }
     
     /**
-     * Devuelve la localizaci√≥n del c√≥digo desensamblado.
-     * @return Localizaci√≥n del c√≥digo desensamblado.
+     * Devuelve la localizaciÛn del cÛdigo desensamblado.
+     * @return LocalizaciÛn del cÛdigo desensamblado.
      */
     public Location getLugarCodigoDesensamblado() {
         return lugarCodigoDesensamblado;

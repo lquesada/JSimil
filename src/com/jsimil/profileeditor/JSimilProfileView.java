@@ -34,7 +34,7 @@ import javax.swing.text.SimpleAttributeSet;
 import javax.swing.text.StyleConstants;
 
 /**
- * Ventana principal de la aplicaciÃ³n.
+ * Ventana principal de la aplicación.
  * @author elezeta
  */
 public class JSimilProfileView extends FrameView {
@@ -55,7 +55,7 @@ public class JSimilProfileView extends FrameView {
     File dir;
     
     /**
-     * EstÃ¡ modificado el perfil?
+     * Está modificado el perfil?
      */
     boolean modificado;
     
@@ -75,7 +75,7 @@ public class JSimilProfileView extends FrameView {
     Font fuente2;
 
     /**
-     * Fuente itÃ¡lica.
+     * Fuente itálica.
      */
     Font fuente3;
 
@@ -90,22 +90,22 @@ public class JSimilProfileView extends FrameView {
     Icon icmodificado;
 
     /**
-     * Formato de nÃºmeros decimales para las propiedades.
+     * Formato de números decimales para las propiedades.
      */
     DecimalFormat df;
 
     /**
-     * Formato de nÃºmeros decimales para los atributos.
+     * Formato de números decimales para los atributos.
      */
     DecimalFormat df2;
     
     /**
-     * Formato de nÃºmeros decimales para los atributos.
+     * Formato de números decimales para los atributos.
      */
     DecimalFormat df3;
     
     /**
-     * Si la ventana se estÃ¡ actualizando.
+     * Si la ventana se está actualizando.
      */
     boolean quieto;
     
@@ -138,10 +138,10 @@ public class JSimilProfileView extends FrameView {
     
     /**
      * Constructor
-     * @param app AplicaciÃ³n.
+     * @param app Aplicación.
      * @param lang Idioma a utilizar.
      * @param profileload Si debe intentar cargarse un perfil desde fichero.
-     * @.post AplicaciÃ³n cargada y funcionando.
+     * @.post Aplicación cargada y funcionando.
      */
     public JSimilProfileView(SingleFrameApplication app,Language lang,
             String profileload) {
@@ -158,9 +158,9 @@ public class JSimilProfileView extends FrameView {
         fuente2 = new Font("Dialog",Font.BOLD,11);
         fuente3 = new Font("Dialog",Font.ITALIC,11);
         icnomodificado = new javax.swing.ImageIcon(getClass().getResource(
-                "/jsimilprofile/resources/noeditado.png"));
+                "resources/noeditado.png"));
         icmodificado = new javax.swing.ImageIcon(getClass().getResource(
-                "/jsimilprofile/resources/editado.png"));
+                "resources/editado.png"));
         attr=new SimpleAttributeSet();
         StyleConstants.setAlignment(attr, StyleConstants.ALIGN_JUSTIFIED);
 
@@ -3181,7 +3181,7 @@ public class JSimilProfileView extends FrameView {
         jLabel9.setText(lang.getFrase(340));
         jLabel9.setName("jLabel9"); // NOI18N
 
-        iconoModificado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jsimilprofile/resources/noeditado.png"))); // NOI18N
+        iconoModificado.setIcon(new javax.swing.ImageIcon(getClass().getResource("resources/noeditado.png"))); // NOI18N
         iconoModificado.setName("iconoModificado"); // NOI18N
 
         jScrollPane2.setName("jScrollPane2"); // NOI18N
@@ -5069,7 +5069,7 @@ public class JSimilProfileView extends FrameView {
     }//GEN-LAST:event_focusLostManager
 
     /**
-     * Gestor de evento de pulsaciÃ³n de tecla.
+     * Gestor de evento de pulsación de tecla.
      * @param evt Evento.
      * @.post Evento gestionado.
      */    
@@ -5089,7 +5089,7 @@ public class JSimilProfileView extends FrameView {
     }//GEN-LAST:event_changeManagerBar
 
     /**
-     * Gestor de evento de click de ratÃ³n.
+     * Gestor de evento de click de ratón.
      * @param evt Evento.
      * @.post Evento gestionado.
      */        
@@ -5098,7 +5098,7 @@ public class JSimilProfileView extends FrameView {
     }//GEN-LAST:event_mouseClicked
 
     /**
-     * Gestor de evento de pulsaciÃ³n de tecla.
+     * Gestor de evento de pulsación de tecla.
      * @param evt Evento.
      * @.post Evento gestionado.
      */    
@@ -5382,7 +5382,7 @@ public class JSimilProfileView extends FrameView {
     /**
      * Comprobador de campo.
      * @param campo Campo a comprobar.
-     * @.post Se han eliminado todos los caracteres salvo puntos y dÃ­gitos.
+     * @.post Se han eliminado todos los caracteres salvo puntos y dígitos.
      */
     void quitaLetras(JTextField campo) {
         String text = campo.getText();
@@ -5419,7 +5419,7 @@ public class JSimilProfileView extends FrameView {
     /**
      * Comprobador de campo.
      * @param campo Campo a comprobar.
-     * @.post Se han eliminado todos los caracteres salvo dÃ­gitos.
+     * @.post Se han eliminado todos los caracteres salvo dígitos.
      */
     void quitaLetras2(JTextField campo) {
         String text = campo.getText();
@@ -5440,7 +5440,7 @@ public class JSimilProfileView extends FrameView {
     
     /**
      * Comprobar si hay modificaciones realizadas y se quieren ignorar.
-     * @return true si se puede realizar la acciÃ³n, false si no.
+     * @return true si se puede realizar la acción, false si no.
      */
     boolean comprobarModificado() {
         if (!modificado)
@@ -5457,7 +5457,7 @@ public class JSimilProfileView extends FrameView {
     }
     
     /**
-     * Cargar perfil con diÃ¡logo.
+     * Cargar perfil con diálogo.
      * @.post Carga tratada.
      */
     @Action
@@ -5504,8 +5504,8 @@ public class JSimilProfileView extends FrameView {
      
      /**
       * Umbralizar.
-      * @param num NÃºmero a umbralizar.
-      * @return NÃºmero umbralizado entre 0 y 1.
+      * @param num Número a umbralizar.
+      * @return Número umbralizado entre 0 y 1.
       */
      double regula(double num) {
          if (num < 0)
@@ -5516,7 +5516,7 @@ public class JSimilProfileView extends FrameView {
      }
 
    /**
-    * Guardar perfil con diÃ¡logo.
+    * Guardar perfil con diálogo.
     * @.post Guardado tratado.
     */
     @Action
@@ -5613,7 +5613,7 @@ public class JSimilProfileView extends FrameView {
     }
 
     /**
-     * Salir con diÃ¡logo.
+     * Salir con diálogo.
      * @.post Salir gestionado.
      */
     @Action
@@ -5625,7 +5625,7 @@ public class JSimilProfileView extends FrameView {
     }
     
     /**
-     * Salir con diÃ¡logo 2.
+     * Salir con diálogo 2.
      * @.post Salir gestionado.
      */
     @Action
@@ -5643,7 +5643,7 @@ public class JSimilProfileView extends FrameView {
 
     /**
      * Actualizar el perfil actual.
-     * @.post InformaciÃ³n sobre modificaciÃ³n de perfil y ruta actualizadas.
+     * @.post Información sobre modificación de perfil y ruta actualizadas.
      */
     void actualizaActual() {
         if (actual != null) {
@@ -5667,7 +5667,7 @@ public class JSimilProfileView extends FrameView {
     }
     
     /**
-     * Guardar perfil al Ãºltimo fichero abierto. Preguntar si no lo hay.
+     * Guardar perfil al último fichero abierto. Preguntar si no lo hay.
      * @.post Perfil guardado.
      */
     @Action
@@ -6159,7 +6159,7 @@ public class JSimilProfileView extends FrameView {
      }
 
      /**
-      * Exportar huella con diÃ¡logo.
+      * Exportar huella con diálogo.
       * @.post Huella exportada tratada.
       */
     @Action
@@ -6222,7 +6222,7 @@ public class JSimilProfileView extends FrameView {
     }
  
     /**
-     * Obtener valor numÃ©rico de campo.
+     * Obtener valor numérico de campo.
      * @param tf Campo.
      * @return Valor obtenido.
      */
@@ -6236,7 +6236,7 @@ public class JSimilProfileView extends FrameView {
     
 
     /**
-     * Cambiar valor numÃ©rico de campo.
+     * Cambiar valor numérico de campo.
      * @param tf Campo.
      * @param val Nuevo valor.
      * @.post Valor cambiado.
@@ -6246,7 +6246,7 @@ public class JSimilProfileView extends FrameView {
     }
    
     /**
-     * Cambiar valor numÃ©rico de campo.
+     * Cambiar valor numérico de campo.
      * @param tf Campo.
      * @param val Nuevo valor.
      * @.post Valor cambiado.
@@ -6326,9 +6326,9 @@ public class JSimilProfileView extends FrameView {
     }
     
     /**
-     * Ajusta valor mÃ­nimo y mÃ¡ximo en el perfil.
-     * @param valormin Valor mÃ­nimo.
-     * @param valormax Valor mÃ¡ximo.
+     * Ajusta valor mínimo y máximo en el perfil.
+     * @param valormin Valor mínimo.
+     * @param valormax Valor máximo.
      * @.post Valores ajustados.
      * @exception JSimilException Campo inexistente.
      */

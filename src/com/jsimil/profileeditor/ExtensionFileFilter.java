@@ -7,26 +7,26 @@ package com.jsimil.profileeditor;
 import java.io.File;
 
 /**
- * Filtrador de ficheros por extensi贸n.
+ * Filtrador de ficheros por extensi髇.
  * @author elezeta
  */
 public final class ExtensionFileFilter
         extends javax.swing.filechooser.FileFilter {
 
     /**
-     * Descripci贸n del filtro.
+     * Descripci髇 del filtro.
      */
     private String desc;
     
     /**
-     * Extensi贸n del filtro.
+     * Extensi髇 del filtro.
      */
     private String ext;
     
     /**
      * Constructor.
-     * @param desc Descripci贸n.
-     * @param ext Extensi贸n.
+     * @param desc Descripci髇.
+     * @param ext Extensi髇.
      */
     public ExtensionFileFilter(String desc,String ext) {
         this.desc = desc;
@@ -34,7 +34,7 @@ public final class ExtensionFileFilter
     }
             
     /**
-     * Se acepta si la extensi贸n coincide.
+     * Se acepta si la extensi髇 coincide.
      * @param pathname Ruta del fichero a comparar.
      * @return true si coincide, false si no.
      */
@@ -44,8 +44,8 @@ public final class ExtensionFileFilter
     }
 
     /**
-     * Devuelve la descripci贸n del filtro.
-     * @return descripci贸n del filtro.
+     * Devuelve la descripci髇 del filtro.
+     * @return descripci髇 del filtro.
      */
     @Override
     public String getDescription() {

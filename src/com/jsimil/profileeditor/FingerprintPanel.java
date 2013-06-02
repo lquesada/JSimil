@@ -15,7 +15,7 @@ import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
 /**
- * Panel para huella de perfil de la aplicaciÃ³n.
+ * Panel para huella de perfil de la aplicación.
  * @author elezeta
  */
 public class FingerprintPanel extends JPanel {
@@ -41,7 +41,7 @@ public class FingerprintPanel extends JPanel {
     double detalle;
     
     /**
-     * Valor de precisiÃ³n.
+     * Valor de precisión.
      */
     double precision;
     
@@ -51,12 +51,12 @@ public class FingerprintPanel extends JPanel {
     double sensibilidad;
     
     /**
-     * Valor de asimilaciÃ³n.
+     * Valor de asimilación.
      */
     double asimilacion;
     
     /**
-     * Valor de especializaciÃ³n.
+     * Valor de especialización.
      */
     double especializacion;
     
@@ -108,10 +108,10 @@ public class FingerprintPanel extends JPanel {
      * Cambia los valores a mostrar.
      * @param velocidad Velocidad a mostrar.
      * @param detalle Detalle a mostrar.
-     * @param precision PrecisiÃ³n a mostrar.
+     * @param precision Precisión a mostrar.
      * @param sensibilidad Sensibilidad a mostrar.
-     * @param asimilacion AsimilaciÃ³n a mostrar.
-     * @param especializacion EspecializaciÃ³n a mostrar.
+     * @param asimilacion Asimilación a mostrar.
+     * @param especializacion Especialización a mostrar.
      * @.post Valores cambiados e imagen redibujada.
      */
     void setValores(double velocidad,double detalle,double precision,
@@ -126,12 +126,12 @@ public class FingerprintPanel extends JPanel {
     }
     
     /**
-     * Dibujar linea con un Ã¡ngulo y tamaÃ±o determinado.
-     * @param g Contexto grÃ¡fico.
+     * Dibujar linea con un ángulo y tamaño determinado.
+     * @param g Contexto gráfico.
      * @param inix Punto x inicial.
      * @param iniy Punto y final.
-     * @param angulo Ãngulo.
-     * @param tama TamaÃ±o de la linea.
+     * @param angulo Ángulo.
+     * @param tama Tamaño de la linea.
      * @.post Linea dibujada.
      */
     private void dibujaLinea(Graphics g,int inix,int iniy,double angulo,
@@ -141,9 +141,9 @@ public class FingerprintPanel extends JPanel {
     }
     
     /**
-     * Obtiene el valor x final a partir de un Ã¡ngulo, tamaÃ±o y valor inicial.
+     * Obtiene el valor x final a partir de un ángulo, tamaño y valor inicial.
      * @param angulo Angulo.
-     * @param tama TamaÃ±o.
+     * @param tama Tamaño.
      * @param inix X inicial.
      * @return Punto x final.
      */
@@ -153,9 +153,9 @@ public class FingerprintPanel extends JPanel {
     }
 
     /**
-     * Obtiene el valor y final a partir de un Ã¡ngulo, tamaÃ±o y valor inicial.
+     * Obtiene el valor y final a partir de un ángulo, tamaño y valor inicial.
      * @param angulo Angulo.
-     * @param tama TamaÃ±o.
+     * @param tama Tamaño.
      * @param iniy Y inicial.
      * @return Punto y final.
      */
@@ -166,7 +166,7 @@ public class FingerprintPanel extends JPanel {
     
     /**
      * Dibujar el componente.
-     * @param ga Contexto grÃ¡fico.
+     * @param ga Contexto gráfico.
      * @.post Componente dibujado.
      */
     @Override
@@ -223,7 +223,7 @@ public class FingerprintPanel extends JPanel {
     /**
      * Exportar imagen.
      * @param ruta Ruta a exportar imagen.
-     * @exception IOException ExcepciÃ³n si exportando.
+     * @exception IOException Excepción si exportando.
      * @return true si exito, false si error.
      * @.post Imagen exportada.
      */

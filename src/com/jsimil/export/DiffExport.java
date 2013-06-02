@@ -65,8 +65,8 @@ abstract public class DiffExport {
      * @param ruta Ruta a donde exportar los resultados.
      * @param overwrite Sobreescribir los resultados?
      * @param res Resultados a utilizar.
-     * @param limite LÃ­mite de resultados a exportar, si -1 no hay lÃ­mite.
-     * @param diffsimil Similitud mÃ­nima para considerar coincidencia.
+     * @param limite Límite de resultados a exportar, si -1 no hay límite.
+     * @param diffsimil Similitud mínima para considerar coincidencia.
      * @.post Escrito fichero.
      * @exception IOException No se puede crear el fichero.
      */
@@ -129,7 +129,7 @@ abstract public class DiffExport {
      * Escribir dos ficheros de resultados a la ruta indicada.
      * @param ruta Ruta a escribir.
      * @param r Fichero de resultado del que extraer los dos resultados.
-     * @param diffsimil Similitud mÃ­nima para considerar coincidencia.
+     * @param diffsimil Similitud mínima para considerar coincidencia.
      * @.post Datos escritos.
      */
     static private void escribeDiff(String ruta,ProgramComparison r,double diffsimil) 
@@ -209,7 +209,7 @@ abstract public class DiffExport {
                 
                 fichotro = null;
                 boolean tienesubelementos = true;
-                //Busco los elementos sin subelementos que estÃ©n en ese fichero.
+                //Busco los elementos sin subelementos que estén en ese fichero.
                 for (j = 0;j < r.getCoincidencias().size();j++) {
                     coin = r.getCoincidencias().get(j);
                     sim = coin.getSimilitud();

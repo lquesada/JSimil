@@ -28,7 +28,7 @@ abstract public class XMLExport {
     /**
      * Escribe los elementos recursivamente al fichero de salida.
      * @param lista Lista de elementos a escribir.
-     * @param ini PosiciÃ³n a partir de la cual escribir.
+     * @param ini Posición a partir de la cual escribir.
      * @param prof Profundidad a escribir.
      * @param out Fichero a escribir.
      * @param resume Resumir?
@@ -203,7 +203,7 @@ abstract public class XMLExport {
      * @param res Resultados a utilizar.
      * @param per Perfil a utilizar.
      * @param resume Resumir?
-     * @param limite LÃ­mite de resultados a exportar, si -1 no hay lÃ­mite.
+     * @param limite Límite de resultados a exportar, si -1 no hay límite.
      * @.post Escrito fichero.
      * @exception IOException No se puede crear el fichero.
      */

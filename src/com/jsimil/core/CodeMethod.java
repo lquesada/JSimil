@@ -11,7 +11,7 @@ import java.util.List;
 
 
 /**
- * M茅todo de un programa a comparar.
+ * M閠odo de un programa a comparar.
  * @author elezeta
  */
 final class CodeMethod extends CodeElement implements Serializable {
@@ -22,24 +22,24 @@ final class CodeMethod extends CodeElement implements Serializable {
     private static final long serialVersionUID = JSimil.serialVersionUID;
     
     /**
-     * Bloques que contiene el m茅todo.
+     * Bloques que contiene el m閠odo.
      */
     private List<CodeBlock> bloques;
     
     /**
-     * Clase que contiene al m茅todo.
+     * Clase que contiene al m閠odo.
      */
     private CodeClass clase;
     
     /**
      * Constructor.
-     * @param programa Programa que contiene al m茅todo.
-     * @param codigoOriginal Lugar del c贸digo original (null si no disponible).
-     * @param codigoDesensamblado Lugar del c贸digo desensamblado.
-     * @param nombre Nombre del m茅todo.
-     * @param id Id del m茅todo.
-     * @param clase Clase que contiene al m茅todo.
-     * @.post Objeto m茅todo inicializado.
+     * @param programa Programa que contiene al m閠odo.
+     * @param codigoOriginal Lugar del c骴igo original (null si no disponible).
+     * @param codigoDesensamblado Lugar del c骴igo desensamblado.
+     * @param nombre Nombre del m閠odo.
+     * @param id Id del m閠odo.
+     * @param clase Clase que contiene al m閠odo.
+     * @.post Objeto m閠odo inicializado.
      */
     protected CodeMethod(Program programa,Location codigoOriginal,
                       Location codigoDesensamblado,String nombre,int id,
@@ -51,16 +51,16 @@ final class CodeMethod extends CodeElement implements Serializable {
     }
        
     /**
-     * Devuelve la lista de bloques contenidos en el m茅todo.
-     * @return Lista de bloques contenidos en el m茅todo.
+     * Devuelve la lista de bloques contenidos en el m閠odo.
+     * @return Lista de bloques contenidos en el m閠odo.
      */
     List<CodeBlock> getBloques() {
         return bloques;
     }
     
     /**
-     * Devuelve la clase que contiene al m茅todo.
-     * @return Clase que contiene al m茅todo.
+     * Devuelve la clase que contiene al m閠odo.
+     * @return Clase que contiene al m閠odo.
      */
     CodeClass getClase() {
         return clase;
@@ -68,8 +68,8 @@ final class CodeMethod extends CodeElement implements Serializable {
     
     /**
      * Cargar subelementos.
-     * @.post Crea los objetos SBloque correspondientes a partir del m茅todo.
-     * @.post A帽ade los SBloques al SPrograma.
+     * @.post Crea los objetos SBloque correspondientes a partir del m閠odo.
+     * @.post A馻de los SBloques al SPrograma.
      */
     void carga() {
         /*z
@@ -107,7 +107,7 @@ final class CodeMethod extends CodeElement implements Serializable {
         int i;
         for (i = 0;i < numinst;++i)
             plider[i] = false;
-        //Primera instrucci贸n del c贸digo es proposici贸n lider.
+        //Primera instrucci髇 del c骴igo es proposici髇 lider.
         boolean ok = false;
         for (i = ini;i < fin && !ok;++i) {
             if (de.get(i).endsWith("Code:")) {
@@ -131,11 +131,11 @@ final class CodeMethod extends CodeElement implements Serializable {
             else {
                 //Recorro las instrucciones: {
                 //  Si es switch, marca flag.
-                //  Si deja de ser switch y hay instrucci贸n, marca plider.
+                //  Si deja de ser switch y hay instrucci髇, marca plider.
                 //  Marcar objetivos como plider.
-                //  Marcar siguiente a instrucci贸n con objetivo como plider.
-                //  Marcar siguiente a instrucci贸n invoke como plider.
-                //  Marcar siguiente a instrucci贸n throw como plider.
+                //  Marcar siguiente a instrucci髇 con objetivo como plider.
+                //  Marcar siguiente a instrucci髇 invoke como plider.
+                //  Marcar siguiente a instrucci髇 throw como plider.
                 //}
 
                 //System.out.println("Linea: "+nlinea);

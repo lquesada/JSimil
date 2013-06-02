@@ -7,7 +7,7 @@ package com.jsimil.core;
 import java.io.Serializable;
 
 /**
- * LocalizaciÃ³n de un elemento en ficheros.
+ * Localización de un elemento en ficheros.
  * @author elezeta
  */
 final public class Location implements Serializable {

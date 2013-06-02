@@ -12,7 +12,7 @@ import com.jsimil.languages.Language;
 import com.jsimil.languages.NoSuchLanguageException;
 
 /**
- * Clase principal de la aplicaciÃ³n.
+ * Clase principal de la aplicación.
  * @author elezeta
  */
 public class JSimilProfile extends SingleFrameApplication {

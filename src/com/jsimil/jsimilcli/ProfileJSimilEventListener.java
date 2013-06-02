@@ -22,7 +22,7 @@ public class ProfileJSimilEventListener implements JSimilEventListener {
     private static final long serialVersionUID = 0;
 
     /**
-     * Primera ejecuciÃ³n?
+     * Primera ejecución?
      */
     private boolean first = false;
 
