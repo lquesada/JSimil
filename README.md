@@ -1,8 +1,8 @@
 JSimil
 ======
 
-JSimil 1.0.4_(9) 2007-2009 (http://www.jsimil.com)
-Bytecode-level similarity detector for Java-written programs
+JSimil (Bytecode-level similarity detector for Java-written programs) www.jsimil.com
+Copyright (c) 2007-2009, Luis Quesada - https://github.com/lquesada
 
 JSimil Quick Guide:
 
