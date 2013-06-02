@@ -12,6 +12,7 @@
         <pathelement location="bin"/>
         <pathelement location="lib/appframework-1.0.3.jar"/>
         <pathelement location="lib/swing-layout-1.0.3.jar"/>
+        <pathelement location="lib/swing-worker-1.1.jar"/>
     </path>
     <target name="init">
         <mkdir dir="bin"/>

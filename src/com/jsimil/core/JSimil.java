@@ -20,7 +20,7 @@ final public class JSimil implements Serializable {
     /**
      * Versión
      */
-    private static String version = "1.0.7";
+    private static String version = "1.0.7free";
 
     /**
      * Autores
