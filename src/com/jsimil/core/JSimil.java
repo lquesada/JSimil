@@ -1,5 +1,5 @@
 /*
- * JSimil. 2007-2010 Luis Quesada Torres.
+ * JSimil. 2007-2010 Luis Quesada.
  */
 
 package com.jsimil.core;
@@ -15,17 +15,17 @@ final public class JSimil implements Serializable {
     /**
      * Serializable
      */
-    static final long serialVersionUID = 9L;
+    static final long serialVersionUID = 10L;
     
     /**
      * Versión
      */
-    private static String version = "1.0.6";
+    private static String version = "1.0.7";
 
     /**
      * Autores
      */
-    private static String[] autores = {"Luis Quesada Torres (www.elezeta.com)"};
+    private static String[] autores = {"Luis Quesada"};
 
     /**
      * Web
@@ -35,7 +35,7 @@ final public class JSimil implements Serializable {
     /**
      * Tiempo de desarrollo
      */
-    private static String tDes = "2007-2011";
+    private static String tDes = "2007-2009";
     
     /**
      * Perfil a utilizar en los procesamientos.

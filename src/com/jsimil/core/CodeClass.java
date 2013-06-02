@@ -1,5 +1,5 @@
 /*
- * JSimil. 2007-2010 Luis Quesada Torres.
+ * JSimil. 2007-2010 Luis Quesada.
  */
 package com.jsimil.core;
 
