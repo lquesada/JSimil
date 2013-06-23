@@ -157,7 +157,8 @@ final class CodeBlock extends CodeElement implements Serializable {
 
             ++nin;
 
-            if (inst.contains("load"))
+            if (inst == null) { }
+            else if (inst.contains("load"))
                 atributos[3] += 1.0;
             else if (inst.contains("const"))
                 atributos[1] += 1.0;
