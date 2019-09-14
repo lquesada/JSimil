@@ -2,7 +2,8 @@ JSimil
 ======
 
 JSimil (Bytecode-level similarity detector for Java-written programs) - www.jsimil.com  
-Copyright (c) 2007-2009, Luis Quesada - https://github.com/lquesada
+
+Copyright (c) 2007-2009, Luis Quesada Torres - https://github.com/lquesada | www.luisquesada.com
 
 JSimil Quick Guide:
 
