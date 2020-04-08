@@ -5,6 +5,8 @@ JSimil (Bytecode-level similarity detector for Java-written programs) - www.jsim
 
 Copyright (c) 2007-2009, Luis Quesada Torres - https://github.com/lquesada | www.luisquesada.com
 
+Paper at https://doi.org/10.5220/0003013403330336
+
 JSimil Quick Guide:
 
 Section 1: Tool description.
